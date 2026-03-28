@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahnoor.dev | Home</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body id="page"> <header class="header">
+        <div class="logo">Ⓜ Mahnoor.dev</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="skills.html">My Skills</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="interactive-container">
+        <h2 id="heading">Welcome to my website</h2>
+        <p>Try these interactive features: 🎨</p>
+        <div class="button-group">
+            <button class="button js-btn" onclick="changeText()">Click Me</button>
+            <button class="button js-btn color-btn" onclick="changeColor()">Change Color</button>
+        </div>
+    </div>
+
+    <section class="hero">
+        <h1>My New Website</h1>
+        <p>Hi everyone! 👋 Welcome to my personal website. The main purpose of this site is to help people through my learning and projects. I dream of becoming one of the best web developers in the world — and, above all, a proud daughter for my parents. 🌸</p>
+    </section>
+
+    <section class="about"> 
+        <h2>🔎 About Me</h2>
+        <p>Hi, I’m Mahnoor Fatima from Pakistan. I’m passionate about web development and love learning new things every day. I’ve created this space to practice my skills, share my progress, and grow as a developer.</p>
+    </section>
+
+    <footer>
+        <p>© Mahnoor.dev ┃ All reserved.
+        <a href="contactme.html">Contact Me</a> | <a href="login.html">Login</a> | <a href="signup.html">Sign UP</a></p>
+    </footer>
+
+    <script>
+        function changeText() {
+            document.getElementById("heading").innerText = "Hello Mahnoor! You clicked the button!";
+        }
+
+        function changeColor() {
+            let r = Math.floor(Math.random() * 256);
+            let g = Math.floor(Math.random() * 256);
+            let b = Math.floor(Math.random() * 256);
+            let color = `rgb(${r}, ${g}, ${b})`;
+            document.getElementById("page").style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>

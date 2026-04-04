@@ -198,7 +198,7 @@ footer {
     margin-top: 50px;
     font-weight: bold;
 }
-/* 404 Page Specific */
+/* --- 404 Error Page Styling --- */
 .error-page {
     background: #0b1d3f;
     display: flex;
@@ -206,6 +206,11 @@ footer {
     justify-content: center;
     height: 100vh;
     text-align: center;
+}
+
+.error-container {
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
 }
 
 .error-code {
@@ -217,13 +222,24 @@ footer {
     animation: glitch 1s linear infinite;
 }
 
+.error-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.error-btns {
+    margin-top: 30px;
+}
+
+.error-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Glitch Animation for 404 */
 @keyframes glitch {
     2%, 64% { transform: translate(2px, 0) skew(0deg); }
     4%, 60% { transform: translate(-2px, 0) skew(0deg); }
     62% { transform: translate(0, 0) skew(5deg); }
-}
-
-.error-page h2 {
-    color: #d0efff;
-    margin-top: 10px;
 }

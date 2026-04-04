@@ -3,52 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahnoor.dev | Home</title>
+    <title>Mahnoor Fatima | AI & Web Developer</title>
     <link rel="stylesheet" href="new.css">
 </head>
-<body id="page"> <header class="header">
+<body id="page" class="home-page">
+
+    <header class="header">
         <div class="logo">Ⓜ Mahnoor.dev</div>
         <nav>
             <ul class="menu">
                 <li><a href="about.html">About</a></li>
-                <li><a href="contactme.html">Contact</a></li>
                 <li><a href="project.html">Projects</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="skills.html">My Skills</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="skills.html">Skills</a></li>
                 <li><a href="cv.html">CV</a></li>
+                <li><a href="ai.html">AI Lab</a></li> <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="interactive-container">
-        <h2 id="heading">Welcome to my website</h2>
-        <p>Try these interactive features: 🎨</p>
-        <div class="button-group">
-            <button class="button js-btn" onclick="changeText()">Click Me</button>
-            <button class="button js-btn color-btn" onclick="changeColor()">Change Color</button>
-        </div>
-    </div>
-
     <section class="hero">
-        <h1>My New Website</h1>
-        <p>Hi everyone! 👋 Welcome to my personal website. The main purpose of this site is to help people through my learning and projects. I dream of becoming one of the best web developers in the world — and, above all, a proud daughter for my parents. 🌸</p>
+        <h1 class="welcome-text">Welcome to My Digital Space</h1>
+        <p>Hi, I'm <strong>Mahnoor Fatima</strong> — an Aspiring AI Specialist and Web Developer from Pakistan. 
+        I dream of becoming a top-tier developer and a proud daughter. 🌸</p>
+        
+        <div class="interactive-container">
+            <p>Make it yours: 🎨</p>
+            <div class="button-group">
+                <button class="button js-btn" onclick="changeText()">Say Hello!</button>
+                <button class="button js-btn color-btn" onclick="changeColor()">Surprise Color</button>
+            </div>
+            <h3 id="heading" style="margin-top: 15px; color: #00ffff;"></h3>
+        </div>
     </section>
 
-    <section class="about"> 
-        <h2>🔎 About Me</h2>
-        <p>Hi, I’m Mahnoor Fatima from Pakistan. I’m passionate about web development and love learning new things every day. I’ve created this space to practice my skills, share my progress, and grow as a developer.</p>
+    <main class="container-box">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600" alt="Mahnoor Fatima" class="profile-photo">
+        
+        <div class="about-text">
+            <h2>🔎 About My Mission</h2>
+            <p>Currently in my <strong>6th Semester of BSIT</strong> at VU Pakistan. I'm mastering the art of Frontend development while diving deep into <strong>Artificial Intelligence</strong>. Coding is my language, but AI is my destination.</p>
+        </div>
+    </main>
+
+    <section class="Skill-section">
+        <h2>Featured Projects 🚀</h2>
+        <div class="project-list">
+            <p>1. <strong>Smart Portfolio:</strong> This interactive site built with HTML, CSS, and JS.</p>
+            <p>2. <strong>AI Training Research:</strong> Documenting my HEC Generative AI journey.</p>
+            <p>3. <strong>Task Manager:</strong> A productivity tool focused on CRUD operations.</p>
+        </div>
+        <a href="project.html" class="button">View All Projects</a>
+    </section>
+
+    <section class="Skill-section" style="background: rgba(0, 255, 255, 0.1); color: white; border: 1px solid #00ffff;">
+        <h2>What I’m Working On ✨</h2>
+        <ul style="text-align: left; display: inline-block;">
+            <li>✔ Python for AI & Machine Learning.</li>
+            <li>✔ Advanced JavaScript & React.</li>
+            <li>✔ Generative AI Prompt Engineering (HEC Training).</li>
+        </ul>
     </section>
 
     <footer>
-        <p>© Mahnoor.dev ┃ All reserved.
-        <a href="contactme.html">Contact Me</a> | <a href="login.html">Login</a> | <a href="signup.html">Sign UP</a></p>
+        <p>© 2026 Mahnoor.dev ┃ Empowering through Code & AI. <br>
+           <a href="login.html">Login</a> | <a href="signup.html">Sign Up</a>
+        </p>
     </footer>
 
     <script>
         function changeText() {
-            document.getElementById("heading").innerText = "Hello Mahnoor! You clicked the button!";
+            document.getElementById("heading").innerText = "Hello! Ready to build the future together?";
         }
 
         function changeColor() {
@@ -56,7 +80,9 @@
             let g = Math.floor(Math.random() * 256);
             let b = Math.floor(Math.random() * 256);
             let color = `rgb(${r}, ${g}, ${b})`;
-            document.getElementById("page").style.backgroundColor = color;
+            // Sirf Hero section ka background change karein taake text visible rahe
+            document.querySelector(".hero").style.borderBottom = `5px solid ${color}`;
+            document.getElementById("heading").style.color = color;
         }
     </script>
 </body>

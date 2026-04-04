@@ -1,4 +1,4 @@
-/* --- 1. General Setup & Reset --- */
+/* --- 1. CORE SETUP & RESET --- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,7 +15,7 @@ body {
     transition: background 0.5s ease;
 }
 
-/* Animations */
+/* Home Page Animated Background */
 body.home-page {
     background: linear-gradient(135deg, #1a1f71, #3333ff, #0b1d3f);
     background-size: 400% 400%;
@@ -28,12 +28,11 @@ body.home-page {
     100% { background-position: 0% 50%; }
 }
 
-/* Responsive Padding */
 @media(min-width: 768px) {
     body { padding: 20px 40px; }
 }
 
-/* --- 2. Header & Navigation --- */
+/* --- 2. NAVIGATION & HEADER --- */
 .header {
     background: #0b1d3f;
     display: flex;
@@ -80,8 +79,10 @@ body.home-page {
     box-shadow: 0 0 10px #00ffff;
 }
 
-/* --- 3. Shared Containers & Glassmorphism --- */
-.container, .container-box, .Skill-section, .contact-section, .about-section, .interactive-container, .cv-section {
+/* --- 3. GLASSMORPHISM CONTAINERS --- */
+/* Unified all similar containers into one rule */
+.container, .container-box, .Skill-section, .contact-section, 
+.about-section, .interactive-container, .cv-section {
     width: 95%;
     max-width: 700px;
     margin: 30px auto;
@@ -95,7 +96,7 @@ body.home-page {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* Dashboard Specific Grid */
+/* Grid System for Dashboard/Projects */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -105,7 +106,31 @@ body.home-page {
     margin: auto;
 }
 
-/* --- 4. Forms & Inputs --- */
+/* --- 4. BUTTONS & INTERACTIVES --- */
+.button, .js-btn, .btn-login, .download-btn, .view-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #5a7ec0, #d0efff);
+    color: #1a1f71;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.button:hover, .js-btn:hover, .btn-login:hover, .download-btn:hover, .view-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4);
+    background: #00ffff;
+    color: #1a1f71;
+}
+
+.color-btn { background: #ff00cc !important; color: white !important; }
+
+/* --- 5. FORMS & INPUTS --- */
 input, select, textarea {
     width: 100%;
     padding: 12px;
@@ -124,31 +149,7 @@ input:focus, select:focus, textarea:focus {
     background: #fff;
 }
 
-/* --- 5. Buttons --- */
-.button, .js-btn, .btn-login, .download-btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background: linear-gradient(45deg, #5a7ec0, #d0efff);
-    color: #1a1f71;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.3s ease;
-    text-align: center;
-}
-
-.color-btn { background: #ff00cc !important; color: white !important; }
-
-.button:hover, .js-btn:hover, .btn-login:hover, .download-btn:hover {
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4);
-    background: #00ffff;
-    color: #1a1f71;
-}
-
-/* --- 6. Profile & Media --- */
+/* --- 6. COMPONENTS (Profile, Progress, Icons) --- */
 .profile-photo {
     display: block;
     width: 180px;
@@ -161,89 +162,14 @@ input:focus, select:focus, textarea:focus {
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-.profile-photo:hover {
-    transform: translateY(-10px) rotate(5deg);
+.profile-photo:hover { transform: translateY(-10px) rotate(5deg); }
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 
-/* --- 7. Special Sections --- */
-
-/* AI Page Styling */
-.ai-page { background-color: #0b0e2d; }
-.hero-ai h1 {
-    color: #00ffff;
-    text-shadow: 0 0 15px #00ffff;
-    font-size: 2.5rem;
-}
-
-/* CV Specific */
-.achievement-item {
-    background: rgba(208, 239, 255, 0.1);
-    margin: 10px 0;
-    padding: 15px;
-    border-left: 4px solid #00ffff;
-    border-radius: 5px;
-    transition: 0.3s;
-    text-align: left;
-}
-
-.achievement-item:hover { transform: translateX(10px); }
-
-/* --- 8. Footer --- */
-footer {
-    text-align: center;
-    padding: 30px;
-    background: #d0efff;
-    color: #1a1f71;
-    border-radius: 20px 20px 0 0;
-    margin-top: 50px;
-    font-weight: bold;
-}
-/* --- 404 Error Page Styling --- */
-.error-page {
-    background: #0b1d3f;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-}
-
-.error-container {
-    border: 2px solid #00ffff;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
-}
-
-.error-code {
-    font-size: 8rem;
-    font-weight: bold;
-    color: #00ffff;
-    text-shadow: 5px 5px 0px #5a7ec0;
-    margin-bottom: 0;
-    animation: glitch 1s linear infinite;
-}
-
-.error-icon {
-    font-size: 50px;
-    margin-bottom: 10px;
-}
-
-.error-btns {
-    margin-top: 30px;
-}
-
-.error-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Glitch Animation for 404 */
-@keyframes glitch {
-    2%, 64% { transform: translate(2px, 0) skew(0deg); }
-    4%, 60% { transform: translate(-2px, 0) skew(0deg); }
-    62% { transform: translate(0, 0) skew(5deg); }
-}
-/* Progress Bar Styling */
+/* Progress Bars for Skills */
 .progress-bar {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -260,8 +186,66 @@ footer {
     box-shadow: 0 0 10px #00ffff;
 }
 
-.skill-item p {
+/* --- 7. SPECIAL PAGES (AI, CV, 404, Projects) --- */
+.ai-page { background-color: #0b0e2d; }
+.hero-ai h1 {
+    color: #00ffff;
+    text-shadow: 0 0 15px #00ffff;
+    font-size: 2.5rem;
+}
+
+.achievement-item {
+    background: rgba(208, 239, 255, 0.1);
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 4px solid #00ffff;
+    border-radius: 5px;
+    transition: 0.3s;
     text-align: left;
-    font-size: 0.9rem;
+}
+
+.achievement-item:hover { transform: translateX(10px); }
+
+/* 404 Specifics */
+.error-page {
+    background: #0b1d3f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.error-code {
+    font-size: 8rem;
     font-weight: bold;
+    color: #00ffff;
+    animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+    2%, 64% { transform: translate(2px, 0) skew(0deg); }
+    4%, 60% { transform: translate(-2px, 0) skew(0deg); }
+    62% { transform: translate(0, 0) skew(5deg); }
+}
+
+.ai-card-highlight {
+    border: 1px solid #00ffff !important;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+/* --- 8. FOOTER --- */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #d0efff;
+    color: #1a1f71;
+    border-radius: 20px 20px 0 0;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.error-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

@@ -1,21 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>My Projects</title>
-        <link rel="stylesheet" href="new.css">
-    </head>
-    <body>
-        <h1>My projects:</h1>
-            <p>Here are some of my favourite projects that helped me practice web design and development skills.</p>
-                <h2>📌Project 1:</h2>
-                <p>This is my personal website built using HTML and CSS.It include my bio, contact form, and project showcase.</p>
-                <h2>📌Project 2:</h2>
-                <p>A simple login designed with a clean interface using HTML and CSS.</p>
-                <h2>📌Project 3:</h2>
-                <p> A basic calculator made using javascript for learning interactivity.</p>
-          <a href="dashboard.html" class="button">Back to Dashboard</a><br><br>
-          <a href="index.html" class="button">Home</a>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Mahnoor.dev</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body class="project-page">
+
+    <header class="header">
+        <div class="logo">Ⓜ My Projects</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="ai.html">AI Lab</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>My Creative Work 🚀</h1>
+        <p>Here are some of my favorite projects that helped me master Web Design and AI concepts.</p>
+
+        <div class="cards">
+            
+            <div class="container-box">
+                <div class="icon">🌐</div>
+                <h2>Personal Portfolio</h2>
+                <p>A complete multi-page website built with HTML and CSS, featuring a dashboard and glassmorphism design.</p>
+                <a href="index.html" class="view-btn">Live Demo</a>
+            </div>
+
+            <div class="container-box">
+                <div class="icon">🔐</div>
+                <h2>Secure Login System</h2>
+                <p>A sleek, responsive login and signup interface with advanced CSS animations and form validation.</p>
+                <a href="login.html" class="view-btn">View Code</a>
+            </div>
+
+            <div class="container-box">
+                <div class="icon">🧮</div>
+                <h2>JS Calculator</h2>
+                <p>An interactive calculator made using JavaScript to practice DOM manipulation and logic building.</p>
+                <a href="#" class="view-btn">Try It</a>
+            </div>
+
+            <div class="container-box" style="border: 1px solid #00ffff;">
+                <div class="icon">🤖</div>
+                <h2>AI Lab Research</h2>
+                <p>Documenting my journey through HEC Generative AI training and prompt engineering techniques.</p>
+                <a href="ai.html" class="view-btn">Explore Lab</a>
+            </div>
+
+        </div>
+
+        <div class="home-btn-container">
+            <a href="dashboard.html" class="button">Back to Dashboard</a>
+            <a href="index.html" class="button">Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Mahnoor.dev ┃ Learning & Growing Every Day</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

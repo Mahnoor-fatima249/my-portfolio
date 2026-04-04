@@ -355,6 +355,11 @@ footer a { color: #5a7ec0; text-decoration: none; }
     display: inline-block;
     transition: 0.3s;
 }
+.home-btn-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px; /* Thori extra space niche se */
+}
 
 .view-btn:hover {
     background: #00ffff;

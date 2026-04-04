@@ -6,69 +6,53 @@
     <title>Mahnoor Fatima | AI & Web Developer</title>
     <link rel="stylesheet" href="new.css">
 </head>
-<body id="page" class="home-page">
+<body id="page">
 
     <header class="header">
         <div class="logo">Ⓜ Mahnoor.dev</div>
         <nav>
             <ul class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="project.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
                 <li><a href="cv.html">CV</a></li>
-                <li><a href="ai.html">AI Lab</a></li> <li><a href="contact.html">Contact</a></li>
+                <li><a href="ai.html">AI Lab</a></li>
+                <li><a href="contactme.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <h1 class="welcome-text">Welcome to My Digital Space</h1>
-        <p>Hi, I'm <strong>Mahnoor Fatima</strong> — an Aspiring AI Specialist and Web Developer from Pakistan. 
-        I dream of becoming a top-tier developer and a proud daughter. 🌸</p>
-        
-        <div class="interactive-container">
-            <p>Make it yours: 🎨</p>
-            <div class="button-group">
-                <button class="button js-btn" onclick="changeText()">Say Hello!</button>
-                <button class="button js-btn color-btn" onclick="changeColor()">Surprise Color</button>
+    <main>
+        <section class="hero">
+            <h1 class="welcome-text">Building the Future with Code & AI</h1>
+            <p>Hi, I'm <strong>Mahnoor Fatima</strong>. A BSIT student, Web Developer, and an aspiring AI Specialist from Pakistan. 🌸</p>
+            
+            <div class="interactive-container">
+                <h3 id="heading">Click the buttons to interact!</h3>
+                <div class="button-group">
+                    <button class="button js-btn" onclick="changeText()">Say Hello</button>
+                    <button class="button js-btn color-btn" onclick="changeColor()">Change Theme</button>
+                </div>
             </div>
-            <h3 id="heading" style="margin-top: 15px; color: #00ffff;"></h3>
-        </div>
-    </section>
+        </section>
 
-    <main class="container-box">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600" alt="Mahnoor Fatima" class="profile-photo">
-        
-        <div class="about-text">
-            <h2>🔎 About My Mission</h2>
-            <p>Currently in my <strong>6th Semester of BSIT</strong> at VU Pakistan. I'm mastering the art of Frontend development while diving deep into <strong>Artificial Intelligence</strong>. Coding is my language, but AI is my destination.</p>
-        </div>
+        <section class="container-box">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Developer Profile" class="profile-photo">
+            <div class="mission-text">
+                <h2>🔎 My Mission</h2>
+                <p>Currently in my 6th Semester, I am bridging the gap between traditional Web Development and <strong>Generative AI</strong>. I believe in continuous learning—from HEC AI Training to mastering Python.</p>
+                <a href="about.html" class="button">Read My Story</a>
+            </div>
+        </section>
     </main>
 
-    <section class="Skill-section">
-        <h2>Featured Projects 🚀</h2>
-        <div class="project-list">
-            <p>1. <strong>Smart Portfolio:</strong> This interactive site built with HTML, CSS, and JS.</p>
-            <p>2. <strong>AI Training Research:</strong> Documenting my HEC Generative AI journey.</p>
-            <p>3. <strong>Task Manager:</strong> A productivity tool focused on CRUD operations.</p>
-        </div>
-        <a href="project.html" class="button">View All Projects</a>
-    </section>
-
-    <section class="Skill-section" style="background: rgba(0, 255, 255, 0.1); color: white; border: 1px solid #00ffff;">
-        <h2>What I’m Working On ✨</h2>
-        <ul style="text-align: left; display: inline-block;">
-            <li>✔ Python for AI & Machine Learning.</li>
-            <li>✔ Advanced JavaScript & React.</li>
-            <li>✔ Generative AI Prompt Engineering (HEC Training).</li>
-        </ul>
-    </section>
-
     <footer>
-        <p>© 2026 Mahnoor.dev ┃ Empowering through Code & AI. <br>
-           <a href="login.html">Login</a> | <a href="signup.html">Sign Up</a>
-        </p>
+        <p>© 2026 Mahnoor.dev ┃ Focused on Excellence</p>
+        <div class="footer-links">
+            <a href="login.html">Admin Login</a> | <a href="signup.html">Join Me</a>
+        </div>
     </footer>
-       <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>

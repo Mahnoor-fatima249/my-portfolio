@@ -243,3 +243,25 @@ footer {
     4%, 60% { transform: translate(-2px, 0) skew(0deg); }
     62% { transform: translate(0, 0) skew(5deg); }
 }
+/* Progress Bar Styling */
+.progress-bar {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    height: 10px;
+    margin: 10px 0 20px;
+    overflow: hidden;
+    border: 1px solid #5a7ec0;
+}
+
+.progress {
+    background: linear-gradient(to right, #5a7ec0, #00ffff);
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+.skill-item p {
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: bold;
+}

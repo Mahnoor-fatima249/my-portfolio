@@ -1,37 +1,26 @@
-
-// Mahnoor.dev - Interactive Features
-
+// Function to update the heading text
 function changeText() {
     const heading = document.getElementById("heading");
     if (heading) {
-        heading.innerText = "Hello! Ready to build the future together?";
-        heading.style.transition = "0.5s";
+        heading.innerText = "Hello Mahnoor! Let's build something amazing. 🚀";
+        heading.style.color = "#00ffff";
     }
 }
-// 1. Background Color Change karne ka function
+
+// Function to generate random colors for the interactive UI
 function changeColor() {
-    let r = Math.floor(Math.random() * 256);
-    let g = Math.floor(Math.random() * 256);
-    let b = Math.floor(Math.random() * 256);
-    let color = `rgb(${r}, ${g}, ${b})`;
-    
-    // Pure page ka background change hoga
-    document.getElementById("page").style.backgroundColor = color;
-}
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    const randomColor = `rgb(${r}, ${g}, ${b})`;
 
-// 2. Content ko Hide/Show (Toggle) karne ka function
-function toggleWebsite() {
-    let content = document.getElementById("main-content");
-    let heading = document.getElementById("heading");
+    const heading = document.getElementById("heading");
+    const container = document.querySelector(".interactive-container");
 
-    // Agar content gayab hai, toh dikha do
-    if (content.style.display === "none") {
-        content.style.display = "block";
-        heading.innerText = "Welcome Back, Mahnoor! ✨";
-    } 
-    // Agar content dikh raha hai, toh gayab kar do
-    else {
-        content.style.display = "none";
-        heading.innerText = "Website Hidden! Click again to show. 🕵️‍♀️";
+    if (heading) {
+        heading.style.color = randomColor;
+    }
+    if (container) {
+        container.style.border = `1px solid ${randomColor}`;
     }
 }

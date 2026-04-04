@@ -344,4 +344,19 @@ footer a { color: #5a7ec0; text-decoration: none; }
     box-shadow: 0 6px 20px rgba(0, 255, 255, 0.5);
     transform: translateY(-3px);
 }
+.view-btn {
+    font-size: 12px;
+    padding: 5px 12px;
+    background: #5a7ec0;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
 
+.view-btn:hover {
+    background: #00ffff;
+    color: #1a1f71;
+}

@@ -1,34 +1,45 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Contact Me</title>
-            <link rel="stylesheet" href="new.css">
-        </head>
-        <body>
-          <header class="header">
-                    <h2>Get in Touch | Contact Me</h2>
-          </header>
-          <p> “Hi, I'm Mahnoor Fatima. If you have any confusion or need help, please contact us — our team will review your issue and work to solve it as soon as possible.” </p>
-          <section class="contact-section">
-        <form action="/action_page.php" class="contact-form">
-            <label for="Name"> Name:</label>
-            <input type="text" id="Name" name="Name" placeholder="Enter your name">
-            <label for="Email"> Email:</label>
-            <input type="email" id="Email" name="Email" placeholder="Enter your email">
-            <label for="Message"> Message:</label>
-            <textarea id="Message" name="Message" rows="5" placeholder="Write your message here..."></textarea>
-            <input type="submit" class="button" value="Send Message">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Mahnoor Fatima</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Get in Touch</h1>
+        <p>Hi, I'm Mahnoor Fatima. If you have any questions, ideas, or need help with a project, feel free to reach out. I'll get back to you as soon as possible!</p>
+    </header>
+
+    <section class="contact-section">
+        <form action="https://formspree.io/f/your-id" method="POST" class="contact-form">
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="name" placeholder="Enter your name" required>
+
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="email" placeholder="Enter your email" required>
+
+            <label for="Message">Message:</label>
+            <textarea id="Message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            
+            <button type="submit" class="button">Send Message</button>
         </form>
+
         <section class="link-section">
-    <a href="mailto:mahnoor.dev@gmail.com">mahnoor.dev@gmail.com</a><br> 
-    <a href="https://www.instagram.com/">Instagram</a><br>
-    <a href="https://pk.linkedin.com/">Linked In</a>
+            <h3>Find me on:</h3>
+            <a href="mailto:mahnoor.dev@gmail.com">mahnoor.dev@gmail.com</a><br> 
+            <a href="https://www.instagram.com/your-username" target="_blank">Instagram</a><br>
+            <a href="https://pk.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+        </section>
     </section>
-<footer>
-          <p>Thanks for Visiting!</p>
-</footer><br>
- <a href="index.html" class="button">Back to Home</a>
+
+    <footer>
+        <p>Thanks for Visiting Mahnoor.dev!</p>
+    </footer>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="index.html" class="button">Back to Home</a>
+    </div>
 </body>
 </html>

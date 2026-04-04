@@ -365,3 +365,40 @@ footer a { color: #5a7ec0; text-decoration: none; }
     background: #00ffff;
     color: #1a1f71;
 }
+/* Navigation Active State */
+.menu li a.active {
+    color: #00ffff;
+    border-bottom: 2px solid #00ffff;
+}
+
+/* Interactive Section */
+.interactive-container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+#heading {
+    transition: all 0.5s ease;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Image Styling */
+.profile-photo {
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.profile-photo:hover {
+    transform: translateY(-10px);
+}

@@ -69,21 +69,6 @@
            <a href="login.html">Login</a> | <a href="signup.html">Sign Up</a>
         </p>
     </footer>
-
-    <script>
-        function changeText() {
-            document.getElementById("heading").innerText = "Hello! Ready to build the future together?";
-        }
-
-        function changeColor() {
-            let r = Math.floor(Math.random() * 256);
-            let g = Math.floor(Math.random() * 256);
-            let b = Math.floor(Math.random() * 256);
-            let color = `rgb(${r}, ${g}, ${b})`;
-            // Sirf Hero section ka background change karein taake text visible rahe
-            document.querySelector(".hero").style.borderBottom = `5px solid ${color}`;
-            document.getElementById("heading").style.color = color;
-        }
-    </script>
+       <script src="script.js"></script>
 </body>
 </html>

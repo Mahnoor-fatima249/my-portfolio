@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | Mahnoor.dev</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body class="weather-page">
+
+    <header class="header">
+        <div class="logo">Ⓜ Weather AI</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-box">
+        <h1>Weather Check ☁️</h1>
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter City Name...">
+            <button class="button" id="searchBtn">Search City</button>
+        </div>
+
+        <div id="weatherResult" class="achievement-item weather-hide">
+            <h2 id="cityName">City</h2>
+            <p id="tempDisplay">Temperature: --°C</p>
+            <p id="descDisplay">Condition: --</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,3 +1,13 @@
+
+// Mahnoor.dev - Interactive Features
+
+function changeText() {
+    const heading = document.getElementById("heading");
+    if (heading) {
+        heading.innerText = "Hello! Ready to build the future together?";
+        heading.style.transition = "0.5s";
+    }
+}
 // 1. Background Color Change karne ka function
 function changeColor() {
     let r = Math.floor(Math.random() * 256);

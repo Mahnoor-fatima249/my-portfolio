@@ -1,6 +1,9 @@
+/* --- 1. GLOBAL UI INTERACTION (For Dashboard/Home) --- */
+const heading = document.getElementById("heading");
+const container = document.querySelector(".interactive-container");
+
 // Function to update the heading text
 function changeText() {
-    const heading = document.getElementById("heading");
     if (heading) {
         heading.innerText = "Hello Mahnoor! Let's build something amazing. 🚀";
         heading.style.color = "#00ffff";
@@ -14,9 +17,6 @@ function changeColor() {
     const b = Math.floor(Math.random() * 256);
     const randomColor = `rgb(${r}, ${g}, ${b})`;
 
-    const heading = document.getElementById("heading");
-    const container = document.querySelector(".interactive-container");
-
     if (heading) {
         heading.style.color = randomColor;
     }
@@ -24,16 +24,18 @@ function changeColor() {
         container.style.border = `1px solid ${randomColor}`;
     }
 }
-// Weather App Logic
+
+/* --- 2. WEATHER APP LOGIC --- */
 const searchBtn = document.getElementById('searchBtn');
+const cityInput = document.getElementById('cityInput');
+const resultDiv = document.getElementById('weatherResult');
 
 if (searchBtn) {
     searchBtn.addEventListener('click', function() {
-        const city = document.getElementById('cityInput').value;
-        const resultDiv = document.getElementById('weatherResult');
+        const city = cityInput.value.trim();
         
         if(city) {
-            // Box ko show karne ke liye class badalna
+            // UI elements update
             resultDiv.classList.remove('weather-hide');
             resultDiv.classList.add('weather-show');
             
@@ -45,7 +47,8 @@ if (searchBtn) {
         }
     });
 }
-// --- To-Do List Logic ---
+
+/* --- 3. TO-DO LIST LOGIC --- */
 const addTaskBtn = document.getElementById('addTaskBtn');
 const taskInput = document.getElementById('taskInput');
 const taskList = document.getElementById('taskList');
@@ -53,12 +56,13 @@ const taskList = document.getElementById('taskList');
 if (addTaskBtn) {
     addTaskBtn.addEventListener('click', function() {
         const taskValue = taskInput.value.trim();
+        
         if (taskValue === '') {
             alert("Pehle kuch likho toh sahi! 😂");
             return;
         }
 
-        // Create Task Item
+        // Create Task Item Element
         const li = document.createElement('li');
         li.className = 'achievement-item task-item';
         li.innerHTML = `
@@ -66,16 +70,16 @@ if (addTaskBtn) {
             <button class="delete-btn">❌</button>
         `;
 
-        // Delete Functionality
+        // Add Delete Event Listener to the new button
         li.querySelector('.delete-btn').addEventListener('click', function() {
             li.remove();
         });
 
         taskList.appendChild(li);
-        taskInput.value = ''; // Clear Input
+        taskInput.value = ''; // Reset Input
     });
 
-    // Enter key support
+    // Enter key support for quick adding
     taskInput.addEventListener('keypress', function (e) {
         if (e.key === 'Enter') {
             addTaskBtn.click();

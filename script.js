@@ -24,3 +24,61 @@ function changeColor() {
         container.style.border = `1px solid ${randomColor}`;
     }
 }
+// Weather App Logic
+const searchBtn = document.getElementById('searchBtn');
+
+if (searchBtn) {
+    searchBtn.addEventListener('click', function() {
+        const city = document.getElementById('cityInput').value;
+        const resultDiv = document.getElementById('weatherResult');
+        
+        if(city) {
+            // Box ko show karne ke liye class badalna
+            resultDiv.classList.remove('weather-hide');
+            resultDiv.classList.add('weather-show');
+            
+            document.getElementById('cityName').innerText = city;
+            document.getElementById('tempDisplay').innerText = "Temperature: 25°C";
+            document.getElementById('descDisplay').innerText = "Condition: Sunny";
+        } else {
+            alert("Please enter a city name!");
+        }
+    });
+}
+// --- To-Do List Logic ---
+const addTaskBtn = document.getElementById('addTaskBtn');
+const taskInput = document.getElementById('taskInput');
+const taskList = document.getElementById('taskList');
+
+if (addTaskBtn) {
+    addTaskBtn.addEventListener('click', function() {
+        const taskValue = taskInput.value.trim();
+        if (taskValue === '') {
+            alert("Pehle kuch likho toh sahi! 😂");
+            return;
+        }
+
+        // Create Task Item
+        const li = document.createElement('li');
+        li.className = 'achievement-item task-item';
+        li.innerHTML = `
+            <span>✅ ${taskValue}</span>
+            <button class="delete-btn">❌</button>
+        `;
+
+        // Delete Functionality
+        li.querySelector('.delete-btn').addEventListener('click', function() {
+            li.remove();
+        });
+
+        taskList.appendChild(li);
+        taskInput.value = ''; // Clear Input
+    });
+
+    // Enter key support
+    taskInput.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+            addTaskBtn.click();
+        }
+    });
+}

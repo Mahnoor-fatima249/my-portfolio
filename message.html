@@ -3,38 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Messages - Mahnoor.dev</title>
+    <title>Messages | Mahnoor.dev</title>
     <link rel="stylesheet" href="new.css">
 </head>
-<body class="message-page"> <header class="header">
+<body class="home-page"> 
+
+    <header class="header">
         <div class="logo">Ⓜ Mahnoor.dev</div>
-        <div class="nav-links">
-            <a href="dashboard.html" class="button">Dashboard</a>
-            <a href="index.html" class="button">Logout</a>
-        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="dashboard.html" class="button">Dashboard</a></li>
+                <li><a href="index.html" class="button">Logout</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        <h2>Messages</h2>
+    <main class="container">
+        <section class="hero-section">
+            <h1 class="welcome-text">Direct Messages</h1>
+            <p>Have a technical inquiry about my <strong>AI Research</strong> or <strong>Web Projects</strong>? Drop a line below.</p>
+        </section>
+
         <section class="contact-section">
             <form action="#" class="contact-form">
-                <label for="yourName">Your Name:</label>
-                <input type="text" id="yourName" name="yourName" placeholder="Enter your name" required>
+                <div class="input-group">
+                    <label for="yourName">Full Name</label>
+                    <input type="text" id="yourName" name="yourName" placeholder="e.g. Recruiter Name" required>
+                </div>
 
-                <label for="yourEmail">Your Email:</label>
-                <input type="email" id="yourEmail" name="yourEmail" placeholder="Enter your email" required>
+                <div class="input-group">
+                    <label for="yourEmail">Email Address</label>
+                    <input type="email" id="yourEmail" name="yourEmail" placeholder="name@company.com" required>
+                </div>
 
-                <label for="yourMessage">Your Message:</label>
-                <textarea id="yourMessage" name="yourMessage" rows="5" placeholder="Write your message here..." required></textarea>
+                <div class="input-group">
+                    <label for="yourMessage">Message</label>
+                    <textarea id="yourMessage" name="yourMessage" rows="5" placeholder="Let's discuss an AI collaboration..." required></textarea>
+                </div>
                 
-                <button type="submit" class="button">Send Message</button>
+                <button type="submit" class="button" style="width: 100%;">Send Message</button>
             </form>
-            <br>
-            <div style="text-align: center;">
-                <a href="dashboard.html" class="button">Back to Dashboard</a>
-            </div>
         </section>
-    </div>
+
+        <div class="home-btn-container" style="margin-top: 30px;">
+            <a href="dashboard.html" class="button">Back to Dashboard</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Mahnoor.dev ┃ Built with Python & Clean Code</p>
+    </footer>
 
     <script src="script.js"></script> 
 </body>

@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Change Text Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Interface | Mahnoor.dev</title>
+    <link rel="stylesheet" href="new.css">
 </head>
-<body>
-  <h2 id="heading">Welcome to my website</h2>
-  <button onclick="changeText()">Click Me</button>
+<body class="home-page">
 
-  <script>
-    function changeText() {
-      document.getElementById("heading").innerText = "Hello Mahnoor! You clicked the button!";
-    }
-  </script>
+    <main class="container">
+        <section class="hero-section">
+            <h2 id="heading" class="welcome-text">Welcome to my AI Workspace</h2>
+            <p>Interactive elements built with JavaScript.</p>
+            
+            <div class="interactive-container" style="margin-top: 20px;">
+                <button class="button" onclick="changeText()">Analyze Response</button>
+            </div>
+        </section>
+
+        <div class="home-btn-container" style="margin-top: 30px;">
+            <a href="index.html" class="button">Back to Home</a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    
+    <script>
+        function changeText() {
+            const heading = document.getElementById("heading");
+            heading.style.opacity = "0"; // Chota sa fade effect
+            
+            setTimeout(() => {
+                heading.innerText = "Hello Mahnoor! System Analysis Complete. 🚀";
+                heading.style.color = "#00ffff";
+                heading.style.opacity = "1";
+            }, 300);
+        }
+    </script>
 </body>
 </html>

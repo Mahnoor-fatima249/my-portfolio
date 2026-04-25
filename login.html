@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Mahnoor.dev</title>
+    <title>Login | Mahnoor.dev</title>
     <link rel="stylesheet" href="new.css">
 </head>
 <body class="home-page">
 
-    <div class="container">
+    <main class="container">
         <form class="login-form">
-            <h2>SIGN IN</h2>
+            <h2 class="error-code" style="font-size: 2rem; animation: none;">SIGN IN</h2>
+            <p style="margin-bottom: 20px;">Access your AI Dashboard</p>
             
             <div class="input-group">
                 <label>Username</label>
@@ -22,15 +23,24 @@
                 <input type="password" placeholder="Enter Password" required>
             </div>
 
-            <div class="links">
-                <a href="#">Forgot Password?</a>
-                <a href="signup.html">Create Account</a>
+            <div class="links" style="margin: 15px 0; display: flex; justify-content: space-between; font-size: 0.9rem;">
+                <a href="#" style="color: #00ffff; text-decoration: none;">Forgot Password?</a>
+                <a href="signup.html" style="color: #00ffff; text-decoration: none;">Create Account</a>
             </div>
-<a href="index.html">
-    <button type="button" class="button btn-login">Login</button>
-</a>
+
+            <a href="dashboard.html">
+                <button type="button" class="button" style="width: 100%;">Login</button>
+            </a>
+            
+            <div style="margin-top: 20px;">
+                <a href="index.html" style="color: #f5f5f5; text-decoration: none; font-size: 0.8rem;">← Back to Home</a>
+            </div>
         </form>
-    </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Mahnoor.dev ┃ Secure Access</p>
+    </footer>
 
 </body>
 </html>

@@ -3,35 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App | Mahnoor.dev</title>
+    <title>Weather AI | Mahnoor.dev</title>
     <link rel="stylesheet" href="new.css">
 </head>
-<body class="weather-page">
+<body class="home-page">
 
     <header class="header">
-        <div class="logo">Ⓜ Weather AI</div>
-        <nav>
-            <ul class="menu">
+        <div class="logo">Ⓜ Mahnoor.dev</div>
+        <nav class="menu">
+            <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="project.html">Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container-box">
-        <h1>Weather Check ☁️</h1>
-        <div class="search-box">
-            <input type="text" id="cityInput" placeholder="Enter City Name...">
-            <button class="button" id="searchBtn">Search City</button>
-        </div>
+    <main class="container">
+        <section class="hero-section">
+            <h1 class="welcome-text">Weather Forecast AI ☁️</h1>
+            <p>Get real-time weather updates using professional API integration.</p>
+        </section>
 
-        <div id="weatherResult" class="achievement-item weather-hide">
-            <h2 id="cityName">City</h2>
-            <p id="tempDisplay">Temperature: --°C</p>
-            <p id="descDisplay">Condition: --</p>
+        <section class="container-box">
+            <div class="input-group" style="display: flex; gap: 10px; margin-bottom: 20px;">
+                <input type="text" id="cityInput" placeholder="Enter City Name (e.g. Lahore)..." style="flex: 1;">
+                <button class="button" id="searchBtn">Search</button>
+            </div>
+
+            <div id="weatherResult" class="achievement-item weather-hide" style="text-align: center; padding: 20px;">
+                <h2 id="cityName" style="color: #00ffff; margin-bottom: 10px;">City Name</h2>
+                <div id="weatherIcon" style="font-size: 3rem; margin: 10px 0;">🌤️</div>
+                <p id="tempDisplay" style="font-size: 1.5rem; font-weight: bold;">--°C</p>
+                <p id="descDisplay" style="text-transform: capitalize; color: #f5f5f5;">Condition</p>
+            </div>
+        </section>
+
+        <div class="home-btn-container" style="margin-top: 30px;">
+            <a href="projects.html" class="button">View More Projects</a>
+            <a href="dashboard.html" class="button">Back to Dashboard</a>
         </div>
     </main>
+
+    <footer>
+        <p>© 2026 Mahnoor.dev ┃ Built with JavaScript & OpenWeather API</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

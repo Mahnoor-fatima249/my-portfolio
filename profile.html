@@ -1,144 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Profile</title>
-    <link rel="stylesheet" href="new.css">
-</head>
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Messages - Mahnoor.dev</title>
+    <title>My Profile | Mahnoor.dev</title>
     <link rel="stylesheet" href="new.css">
 </head>
-<body class="message-page"> <header class="header">
+<body class="home-page">
+
+    <header class="header">
         <div class="logo">Ⓜ Mahnoor.dev</div>
-        <div class="nav-links">
-            <a href="dashboard.html" class="button">Dashboard</a>
-            <a href="index.html" class="button">Logout</a>
-        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="dashboard.html" class="button">Dashboard</a></li>
+                <li><a href="index.html" class="button">Logout</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        <h2>Messages</h2>
-        <section class="contact-section">
-            <form action="#" class="contact-form">
-                <label for="yourName">Your Name:</label>
-                <input type="text" id="yourName" name="yourName" placeholder="Enter your name" required>
-
-                <label for="yourEmail">Your Email:</label>
-                <input type="email" id="yourEmail" name="yourEmail" placeholder="Enter your email" required>
-
-                <label for="yourMessage">Your Message:</label>
-                <textarea id="yourMessage" name="yourMessage" rows="5" placeholder="Write your message here..." required></textarea>
-                
-                <button type="submit" class="button">Send Message</button>
-            </form>
-            <br>
-            <div style="text-align: center;">
-                <a href="dashboard.html" class="button">Back to Dashboard</a>
-            </div>
+    <main class="container">
+        <section class="profile-preview">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQGaHGnDwEYhyQ/profile-displayphoto-crop_800_800/B56Z0rItBHIMAM-/0/1774545200157?e=1776902400&v=beta&t=tGWIxg8A1zz9smZ1g6qzr9SbTmPIkmByu48pjs6cn8I" alt="Mahnoor Fatima" class="profile-photo">
+            <h2>Mahnoor Fatima</h2>
+            <p>Full Stack Web Developer | AI & Python Intern</p>
         </section>
-    </div>
 
-    <script src="script.js"></script> 
-</body>
-</html>
-    <section class="about-section">
-<img src="https://images.unsplash.com/photo-1605515223642-fd67abd879ab?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=patrik-velich-HrcZ34Cxy1A-unsplash.jpg" alt="Mahnoor Fatima picture" class="profile-photo">
-</section>
-<h2>Mahnoor Fatima</h2>
-<h4>Web Designer | Student</h4>
- <div class="container-box">
-     <div class="inputBx">
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" required placeholder="Email"/>
-</div><br>
-<div class="inputBx">
-    <label for="phone">Phone Number:</label><br>
-    <input type="tel" id="phone" required placeholder="Phone Number"/>
-</div><br>
-  <label for="country">Select a Country:</label>
-  <select id="country" name="country">
-    <option value="Afghanistan">Afghanistan</option>
-    <option value="Argentina">Argentina</option>
-    <option value="Australia">Australia</option>
-    <option value="Austria">Austria</option>
-    <option value="Azerbaijan">Azerbaijan</option>
-    <option value="Bangladesh">Bangladesh</option>
-    <option value="Bosnia">Bosnia</option>
-    <option value="Canada">Canada</option>
-    <option value="China">China</option>
-    <option value="Colombia">Colombia</option>
-    <option value="Congo">Congo</option>
-    <option value="Denmark">Denmark</option>
-    <option value="Egypt">Egypt</option>
-    <option value="Finland">Finland</option>
-    <option value="France">France</option>
-    <option value="Germany">Germany</option>
-    <option value="Hong Kong">Hong Kong</option>
-    <option value="Hungary">Hungary</option>
-    <option value="Iceland">Iceland</option>
-    <option value="India">India</option>
-    <option value="Iran">Iran</option>
-    <option value="Iraq">Iraq</option>
-    <option value="Israel">Israel</option>
-    <option value="Japan">Japan</option>
-    <option value="Jordan">Jordan</option>
-    <option value="Kenya">Kenya</option>
-    <option value="Kuwait">Kuwait</option>
-    <option value="Laos">Laos</option>
-    <option value="Lebanon">Lebanon</option>
-    <option value="Malaysia">Malaysia</option>
-    <option value="Maldives">Maldives</option>
-    <option value="Mexico">Mexico</option>
-    <option value="Mongolia">Mongolia</option>
-    <option value="Morocco">Morocco</option>
-    <option value="Myanmar">Myanmar</option>
-    <option value="Nepal">Nepal</option>
-    <option value="New Zealand">New Zealand</option>
-    <option value="Nigeria">Nigeria</option>
-    <option value="North Korea">North Korea</option>
-    <option value="Norway">Norway</option>
-    <option value="Oman">Oman</option>
-    <option value="Pakistan">Pakistan</option>
-    <option value="Philippines">Philippines</option>
-    <option value="Poland">Poland</option>
-    <option value="Portugal">Portugal</option>
-    <option value="Romania">Romania</option>
-    <option value="Russia">Russia</option>
-    <option value="Saudi Arabia">Saudi Arabia</option>
-    <option value="Somalia">Somalia</option>
-    <option value="South Korea">South Korea</option>
-    <option value="Spain">Spain</option>
-    <option value="Syria">Syria</option>
-    <option value="Taiwan">Taiwan</option>
-    <option value="Tajikistan">Tajikistan</option>
-    <option value="Thailand">Thailand</option>
-    <option value="Turkey">Turkey</option>
-    <option value="UAE">UAE</option>
-    <option value="Uganda">Uganda</option>
-    <option value="Ukraine">Ukraine</option>
-    <option value="UK">UK</option>
-    <option value="USA">USA</option>
-    <option value="Vietnam">Vietnam</option>
-  </select>
- <button type="submit">
-</div>
- </div>
- <a href="#" class="button">Edit Button</a>
- <div class="about-section">
-    <p>Hi, I'm Mahnoor Fatima, a passionate learner from Pakistan who dreams to become a top web developer. 
-        I love creating beautiful websites and learning new coding skills every day. 
-        My goal is to help people with technology and make the web a better place for everyone. 
-        🌱 <strong>My Skills:</strong> HTML, CSS, Designing <br>
-        💻 <strong>Hobbies:</strong> Coding, Designing, Learning something creative every day!
-    </p>
-</div>
-<a href="dashboard.html" class="button"> Back to Dashboard</a><br><br>
-<a href="#" class="button">Upload a New Profile Photo</a>
+        <section class="container-box">
+            <form class="notification-form">
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" value="mf0488789@gmail.com" readonly>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" value="+92-312-8137272" readonly>
+                </div>
+
+                <div class="input-group">
+                    <label for="country">Location</label>
+                    <select id="country" name="country">
+                        <option value="Pakistan" selected>Pakistan</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Canada">Canada</option>
+                        </select>
+                </div>
+
+                <div class="btn-group" style="margin-top: 20px;">
+                    <button type="button" class="button" style="width: 100%;">Save Profile</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="about-section" style="margin-top: 30px;">
+            <h3>Bio</h3>
+            <p>
+                Hi, I'm **Mahnoor Fatima**, a BSIT student and AI Intern at DecodeLabs[cite: 10, 32]. 
+                I specialize in building and deploying conversational AI using **Llama-3** and **Gradio**[cite: 11, 34]. 
+                My goal is to bridge the gap between clean, functional code and innovative AI solutions[cite: 12].
+            </p>
+            <p>
+                🌱 **Skills:** Python, LLM Integration, React, HTML5, CSS3[cite: 85, 93, 107].<br>
+                💻 **Interests:** AI Research, UX Design, and Professional Photo Editing[cite: 71, 87].
+            </p>
+        </section>
+
+        <div class="home-btn-container" style="margin-top: 30px;">
+            <a href="#" class="view-btn">Update Profile Photo</a>
+            <a href="dashboard.html" class="button">Back to Dashboard</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Mahnoor.dev ┃ Dedicated to Innovation</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

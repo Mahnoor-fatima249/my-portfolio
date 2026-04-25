@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Notifications</title>
-        <link rel="stylesheet" href="new.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications | Mahnoor.dev</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body class="home-page">
+
     <header class="header">
-    <div class="logo">Ⓜ Mahnoor.dev</div>
-    <div class="nav-links">
-        <a href="dashboard.html" class="button">Dashboard</a>
-        <a href="index.html" class="button">Logout</a>
-    </div>
-</header>
-    <body>
-        <div class="setting-container">
-            <h2>Notifications:</h2>
-            <div class="setting-group">
-            <label><br><br>
-            <input type="checkbox" checked>Email Notification
-            </label><br><br>
-            <label>
-                <input type="checkbox" checked>SMS Alert
-            </label>
-    </body>
-        </html>
+        <div class="logo">Ⓜ Mahnoor.dev</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="dashboard.html" class="button">Dashboard</a></li>
+                <li><a href="index.html" class="button">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero-section">
+            <h1 class="welcome-text">Notification Settings</h1>
+            <p>Control how you receive updates about your AI projects and academic progress.</p>
+        </section>
+
+        <section class="container-box" style="text-align: left; max-width: 500px; margin: auto;">
+            <form class="notification-form">
+                <div class="input-group" style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <input type="checkbox" id="email" checked>
+                    <label for="email"><strong>Email Notifications:</strong> Get HEC AI training updates[cite: 12].</label>
+                </div>
+
+                <div class="input-group" style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <input type="checkbox" id="sms" checked>
+                    <label for="sms"><strong>SMS Alerts:</strong> Real-time internship task reminders[cite: 32].</label>
+                </div>
+
+                <div class="input-group" style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <input type="checkbox" id="system" checked>
+                    <label for="system"><strong>System Alerts:</strong> LLM model deployment status[cite: 130].</label>
+                </div>
+
+                <button type="submit" class="button" style="width: 100%; margin-top: 10px;">Save Preferences</button>
+            </form>
+        </section>
+
+        <div class="home-btn-container" style="margin-top: 30px;">
+            <a href="dashboard.html" class="button">Back to Dashboard</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Mahnoor.dev ┃ Full Stack AI Intern [cite: 2]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,24 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Setting</title>
-        <link rel="stylesheet" href="new.css">
-    </head>
-    <body>
-        <h2>Account Settings</h2>
- <section class="contact-section">
-        <form action="/action_page.php" class="contact-form">
-            <label for="UserName">User Name:</label>
-            <input type="text" id="UserName" placeholder="Enter your name">
-            <label for="Email">Email:</label>
-            <input type="email" id="yourEmail" placeholder="Enter your email">
-             <label for="password">Password:</label>
-            <input type="password" placeholder="password">
-            <a href="#" class="button">Update Button</a>
-            </form></section>
-            <a href="#" class="button">Save Button</a><br><br>
-            <a href="dashboard.html" class="button"> Back to dashboard</a>
-            </body>
-            </html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings | Mahnoor.dev</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body class="home-page">
+
+    <header class="header">
+        <div class="logo">Ⓜ Mahnoor.dev</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="dashboard.html" class="button">Dashboard</a></li>
+                <li><a href="index.html" class="button">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero-section">
+            <h1 class="welcome-text">Account Settings</h1>
+            <p>Update your credentials and security preferences for your AI control panel.</p>
+        </section>
+
+        <section class="contact-section">
+            <form class="contact-form">
+                <div class="input-group">
+                    <label for="UserName">Display Name</label>
+                    <input type="text" id="UserName" placeholder="Mahnoor Fatima">
+                </div>
+
+                <div class="input-group">
+                    <label for="yourEmail">Registered Email</label>
+                    <input type="email" id="yourEmail" placeholder="mf0488789@gmail.com">
+                </div>
+
+                <div class="input-group">
+                    <label for="password">New Password</label>
+                    <input type="password" id="password" placeholder="Enter new password">
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm new password">
+                </div>
+
+                <div class="btn-group" style="margin-top: 20px;">
+                    <button type="submit" class="button" style="width: 100%;">Save Changes</button>
+                </div>
+            </form>
+        </section>
+
+        <div class="home-btn-container" style="margin-top: 30px;">
+            <a href="dashboard.html" class="button">Back to Dashboard</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Mahnoor.dev ┃ High Performance AI Architecture</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

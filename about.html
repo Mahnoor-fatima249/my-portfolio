@@ -6,39 +6,57 @@
     <title>About Me | Mahnoor.dev</title>
     <link rel="stylesheet" href="new.css">
 </head>
-<body class="home-page"> <header class="header">
-    <div class="logo">Ⓜ Mahnoor.dev</div>
-    <ul class="menu">
-        <li><a href="index.html">Logout</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="dashboard.html" class="button">Dashboard</a></li>
-    </ul>
-</header>
+<body class="home-page"> 
 
-<section class="about-section">
-    <img src="https://media.licdn.com/dms/image/v2/D5603AQGaHGnDwEYhyQ/profile-displayphoto-crop_800_800/B56Z0rItBHIMAM-/0/1774545200157?e=1776902400&v=beta&t=tGWIxg8A1zz9smZ1g6qzr9SbTmPIkmByu48pjs6cn8I" alt="Mahnoor Fatima" class="profile-photo">
-    
-    <h2>About Me</h2>
-    <p>
-        Hi, I'm <strong>Mahnoor Fatima</strong>, a dedicated <strong>BSIT (6th Semester)</strong> student at VU Pakistan with a <strong>3.0+ CGPA</strong>. My journey is fueled by a mission to become the best for my parents and a leader in the tech industry.
-        <br><br>
-        Currently, I am an <strong>AI Intern at DecodeLab</strong> and a <strong>Generative AI Intern at Arch Technologies</strong>. I specialize in bridging the gap between sleek Web Development and intelligent AI systems. From building responsive platforms on <strong>Mahnoor.dev</strong> to implementing <strong>OCR, NLP, and Machine Learning</strong> models, I thrive on turning complex logic into functional reality.
-        <br><br>
-        🌱 <strong>Technical Stack:</strong> Python, AI Model Implementation, HTML5, CSS3, JavaScript. <br>
-        🚀 <strong>Career Goal:</strong> Developing AI-powered web solutions that solve real-world problems.
-    </p>
+    <header class="header">
+        <div class="logo">Ⓜ Mahnoor.dev</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="index.html" class="logout-btn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="skill-tags" style="margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
-        <span class="intern-badge">Web Dev</span>
-        <span class="intern-badge">Machine Learning</span>
-        <span class="intern-badge">NLP</span>
-        <span class="intern-badge">GenAI</span>
-    </div>
-</section>
+    <main class="container">
+        <section class="about-hero">
+            <div class="profile-wrapper">
+                <img src="image/me.png" 
+                     alt="Mahnoor Fatima" class="profile-photo">
+            </div>
+            <h1 class="welcome-text">About Me</h1>
+        </section>
 
-<footer>
-    <p>© 2026 Mahnoor.dev ┃ Learning & Growing Every Day</p>
-</footer>
+        <section class="container-box about-text-card">
+            <p>
+                Hi, I'm <strong>Mahnoor Fatima</strong>, a dedicated <strong>BSIT (6th Semester)</strong> student at VU Pakistan with a <strong>3.0+ CGPA</strong>. My journey is fueled by a mission to become the best for my parents and a leader in the tech industry.
+            </p>
+            <br>
+            <p>
+                Currently, I am an <strong>AI Intern at DecodeLab</strong> and a <strong>Generative AI Intern at Arch Technologies</strong>. I specialize in bridging the gap between sleek Web Development and intelligent AI systems.
+            </p>
+            
+            <div class="tech-info">
+                <p>🌱 <strong>Technical Stack:</strong> Python, AI Model Implementation, HTML5, CSS3, JavaScript.</p>
+                <p>🚀 <strong>Career Goal:</strong> Developing AI-powered web solutions that solve real-world problems.</p>
+            </div>
 
+            <div class="skill-tags" >
+                <span class="tech-tag">Web Dev</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">GenAI</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container-box">
+        <p>© 2026 Mahnoor.dev ┃ Learning & Growing Every Day</p>
+        <button class="theme-toggle-btn" onclick="changeTheme()" title="Switch Theme">🎨</button>
+
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

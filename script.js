@@ -1,11 +1,9 @@
 // ==========================================
-// 1. THEME SWITCHER (Rotate 1 to 9)
+// 1. THEME SWITCHER
 // ==========================================
 function changeTheme() {
     const body = document.body;
     let currentTheme = 0;
-
-    // Check karein ke abhi konsi class lagi hui hai
     for (let i = 1; i <= 9; i++) {
         if (body.classList.contains(`theme-${i}`)) {
             currentTheme = i;
@@ -13,46 +11,36 @@ function changeTheme() {
             break;
         }
     }
-
-    // Agli theme set karein (1 to 9)
     let nextTheme = (currentTheme % 9) + 1;
     body.classList.add(`theme-${nextTheme}`);
-    
-    // Save karein taake refresh par color na jaye
     localStorage.setItem('user-theme-class', `theme-${nextTheme}`);
 }
 
 // ==========================================
-// 2. PAGE LOAD HANDLER
+// 2. PAGE LOAD HANDLER (Theme & Skills)
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
-    // Theme Restore
     const savedClass = localStorage.getItem('user-theme-class');
-    if (savedClass) {
-        document.body.classList.add(savedClass);
-    }
+    if (savedClass) document.body.classList.add(savedClass);
 
-    // Animate Skill Progress Bars (For Skills Page)
     const progressBars = document.querySelectorAll('.skill-item');
     progressBars.forEach(item => {
         const percentElement = item.querySelector('.skill-info span:last-child');
         const bar = item.querySelector('.progress');
         if(percentElement && bar) {
-            const percent = percentElement.innerText;
-            bar.style.width = percent; 
+            bar.style.width = percentElement.innerText; 
         }
     });
 });
 
 // ==========================================
-// 3. PRO-TASK MANAGER (For todo.html)
+// 3. TASK MANAGER (todo.html)
 // ==========================================
 const addTaskBtn = document.getElementById('addTaskBtn');
-const taskInput = document.getElementById('taskInput');
-const taskList = document.getElementById('taskList');
-
 if(addTaskBtn) {
     addTaskBtn.addEventListener('click', () => {
+        const taskInput = document.getElementById('taskInput');
+        const taskList = document.getElementById('taskList');
         if(taskInput.value.trim() !== "") {
             const li = document.createElement('li');
             li.innerHTML = `<span>✅ ${taskInput.value}</span> <button onclick="this.parentElement.remove()" style="background:none; border:none; color:red; cursor:pointer; float:right;">✖</button>`;
@@ -66,19 +54,16 @@ if(addTaskBtn) {
 }
 
 // ==========================================
-// ==========================================
-// ==========================================
-// WEATHER AI LOGIC
+// 4. WEATHER AI LOGIC (weather.html)
 // ==========================================
 const searchBtn = document.getElementById('searchBtn');
-
 if(searchBtn) {
     searchBtn.addEventListener('click', () => {
-        const city = document.getElementById('cityInput').value;
-        const apiKey = "66e85f2abdef70c3cfd70a6f2f67ef94"; // <--- Put your key here
+        const city = document.getElementById('cityInput').value.trim();
+        const apiKey = "66e85f2abdef70c3cfd70a6f2f67ef94"; 
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-        if(city.trim() !== "") {
+        if(city !== "") {
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
@@ -88,24 +73,25 @@ if(searchBtn) {
                         document.getElementById('descDisplay').innerText = data.weather[0].description;
                         
                         const iconCode = data.weather[0].icon;
-                        const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
+                        const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
                         document.getElementById('weatherIcon').innerHTML = `<img src="${iconUrl}" alt="weather">`;
                         
                         const resultDiv = document.getElementById('weatherResult');
                         resultDiv.style.display = "block";
                         resultDiv.classList.remove('weather-hide');
                     } else {
-                        alert("City not found!");
+                        alert("City not found! Please check spelling.");
                     }
                 })
-                .catch(err => alert("Connection Error. Check API Key."));
+                .catch(err => alert("Connection Error. Please check your internet."));
         } else {
             alert("Please enter a city name!");
         }
     });
 }
+
 // ==========================================
-// 5. WORKSPACE TEXT CHANGE (For work.html)
+// 5. WORKSPACE TEXT CHANGE (work.html)
 // ==========================================
 function changeText() {
     const heading = document.getElementById("heading");
@@ -117,22 +103,4 @@ function changeText() {
             heading.style.opacity = "1";
         }, 300);
     }
-}
-const searchBtn = document.getElementById('searchBtn');
-
-if (searchBtn) {
-    searchBtn.addEventListener('click', function() {
-        console.log("Button Clicked!"); // Browser console check karein
-        alert("Search button kaam kar raha hai!"); 
-        
-        const city = document.getElementById('cityInput').value;
-        if (city === "") {
-            alert("Pehle sheher ka naam likhein!");
-            return;
-        }
-        
-        // Yahan aapka baqi fetch wala code aayega...
-    });
-} else {
-    console.log("Error: Search button nahi mila!");
 }

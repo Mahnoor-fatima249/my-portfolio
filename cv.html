@@ -6,70 +6,79 @@
     <title>Professional CV | Mahnoor Fatima</title>
     <link rel="stylesheet" href="new.css">
 </head>
-<body class="home-page">
+<body class="cv-page">
 
     <header class="header">
         <div class="logo">Ⓜ Mahnoor.dev</div>
-        <nav class="menu">
-            <ul>
+        <nav>
+            <ul class="menu">
                 <li><a href="dashboard.html">Dashboard</a></li>
                 <li><a href="index.html">Logout</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container">
+    <main class="container cv-main-wrapper">
         <section class="hero-section">
-            <h1>Mahnoor Fatima</h1>
-            <p>Full Stack Web Developer | AI & Python Intern</p>
+            <h1 class="welcome-text">Mahnoor Fatima</h1>
+            <p class="subtitle">Full Stack Web Developer | AI & Python Intern</p>
         </section>
 
-        <section class="cv-section">
+        <section class="cv-flex-stack">
             
-            <div class="achievement-item">
+            <article class="container-box cv-card">
                 <h3>📝 Professional Summary</h3>
-                <p>BSIT student (6th Semester) and AI Intern at DecodeLabs. [cite: 10] Expert in building and deploying conversational AI using Llama-3 and Gradio. [cite: 11] Dedicated to building innovative AI solutions as part of HEC's Generative AI Cohort. [cite: 12]</p>
-            </div>
+                <p>BSIT student (6th Semester) and AI Intern at DecodeLabs. Expert in building and deploying conversational AI using Llama-3 and Gradio. Dedicated to building innovative AI solutions as part of HEC's Generative AI Cohort.</p>
+            </article>
 
-            <div class="achievement-item">
+            <article class="container-box cv-card">
                 <h3>💼 Professional Experience</h3>
-                <p><strong>Artificial Intelligence Intern</strong> - DecodeLabs [cite: 32]</p>
-                <ul>
-                    <li>Developed Llama-3 chatbot via Hugging Face API, replacing rule-based logic. [cite: 33]</li>
-                    <li>Built Gradio interface supporting English, Urdu, and Roman Urdu. [cite: 34]</li>
-                </ul>
-                <p><strong>GenAI Intern</strong> - Arch Technologies</p>
-                <p><strong>Technology & Strategy Virtual Intern</strong> - Deloitte Australia [cite: 35, 36]</p>
-            </div>
+                <div class="exp-block">
+                    <h4>Artificial Intelligence Intern — DecodeLabs</h4>
+                    <ul class="cv-bullet-list">
+                        <li>Developed Llama-3 chatbot via Hugging Face API, replacing rule-based logic.</li>
+                        <li>Built Gradio interface supporting English, Urdu, and Roman Urdu.</li>
+                    </ul>
+                </div>
+                <div class="exp-block">
+                    <h4>GenAI Intern — Arch Technologies</h4>
+                </div>
+                <div class="exp-block">
+                    <h4>Technology & Strategy Virtual Intern — Deloitte Australia</h4>
+                </div>
+            </article>
 
-            <div class="achievement-item">
+            <article class="container-box cv-card">
                 <h3>🛠 Technical Skills</h3>
-                <p><strong>AI & NLP:</strong> LLM Integration (Llama-3), Prompt Engineering, Conversational AI. [cite: 107, 108, 109]</p>
-                <p><strong>Development:</strong> Python (Gradio), Java (OOP), HTML5, CSS3, JavaScript. [cite: 93, 94, 111, 85]</p>
-                <p><strong>Tools & Deployment:</strong> Git/GitHub, Hugging Face Spaces, VS Code. [cite: 95, 96, 86]</p>
-            </div>
+                <div class="skills-layout">
+                    <p><strong>AI & NLP:</strong> LLM Integration (Llama-3), Prompt Engineering, Conversational AI.</p>
+                    <p><strong>Development:</strong> Python (Gradio), Java (OOP), HTML5, CSS3, JavaScript.</p>
+                    <p><strong>Tools & Deployment:</strong> Git/GitHub, Hugging Face Spaces, VS Code.</p>
+                </div>
+            </article>
 
-            <div class="achievement-item">
+            <article class="container-box cv-card">
                 <h3>🏆 Education & Certifications</h3>
-                <p><strong>BS Information Technology</strong> - Virtual University [cite: 82]</p>
-                <p><strong>UniAthena:</strong> Certified ML & ChatGPT Specialist. [cite: 30, 31]</p>
-                <p><strong>Cisco Academy:</strong> Introduction to Modern AI & Data Science. [cite: 40, 41]</p>
-                <p><strong>Pakistan Bait-ul-Mal:</strong> Awarded A+ Grade in Skill Development. [cite: 45, 46]</p>
-            </div>
+                <ul class="cv-bullet-list">
+                    <li><strong>BS Information Technology</strong> — Virtual University</li>
+                    <li><strong>UniAthena:</strong> Certified ML & ChatGPT Specialist.</li>
+                    <li><strong>Cisco Academy:</strong> Introduction to Modern AI & Data Science.</li>
+                    <li><strong>Pakistan Bait-ul-Mal:</strong> Awarded A+ Grade in Skill Development.</li>
+                </ul>
+            </article>
 
-            <div class="download-container">
-                <a href="Mahnoor_Fatima_FlowCV_Resume_2026-04-15.pdf" class="button">Download Full CV (PDF)</a>
-            </div>
-            
         </section>
 
-        <div class="home-btn-container">
-            <a href="index.html" class="button">Back to Home</a>
-        </div>
+        <footer class="cv-actions-bar">
+            <a href="file:///C:/Users/Lenovo/Downloads/Mahnoor_Fatima_FlowCV_Resume_2026-04-15.pdf" class="button">Download Full CV (PDF)</a>
+            <a href="index.html" class="button secondary">Back to Home</a>
+        </footer>
     </main>
 
-    <footer>
-        <p>© 2026 Mahnoor.dev ┃ Learning ┃ Growing ┃ Innovating</p>
+    <footer class="footer">
+        <p>&copy; 2026 Mahnoor.dev ┃ Learning ┃ Growing ┃ Innovating</p>
+        <button class="theme-toggle-btn" onclick="changeTheme()" title="Switch Theme">🎨</button>
+
     </footer>
 
     <script src="script.js"></script>

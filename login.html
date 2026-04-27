@@ -3,46 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Mahnoor.dev</title>
+    <title>Messages | Mahnoor.dev</title>
     <link rel="stylesheet" href="new.css">
 </head>
-<body class="auth-page">
+<body class="messages-page"> 
 
-    <main class="container auth-container">
-        <form class="login-form container-box">
-            <h2 class="auth-title">SIGN IN</h2>
-            <p class="auth-subtitle">Access your AI Dashboard</p>
-            
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" placeholder="Enter Username" required>
-            </div>
+    <header class="header">
+        <div class="logo">Ⓜ Mahnoor.dev</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="dashboard.html" class="button">Dashboard</a></li>
+                <li><a href="index.html" class="button">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter Password" required>
-            </div>
+    <main class="container">
+        <section class="hero-section">
+            <h1 class="welcome-text">Direct Messages</h1>
+            <p>Have a technical inquiry about my <strong>AI Research</strong> or <strong>Web Projects</strong>? Drop a line below.</p>
+        </section>
 
-            <div class="auth-links">
-                <a href="#" class="link-cyan">Forgot Password?</a>
-                <a href="signup.html" class="link-cyan">Create Account</a>
-            </div>
+        <section class="contact-section container-box">
+            <form action="#" class="contact-form">
+                <div class="input-group">
+                    <label for="yourName">Full Name</label>
+                    <input type="text" id="yourName" name="yourName" placeholder="e.g. Recruiter Name" required>
+                </div>
 
-            <div class="form-actions">
-                <a href="dashboard.html" class="button full-width">Login</a>
-            </div>
-            
-            <div class="back-home">
-                <a href="index.html" class="link-back">← Back to Home</a>
-            </div>
-        </form>
+                <div class="input-group">
+                    <label for="yourEmail">Email Address</label>
+                    <input type="email" id="yourEmail" name="yourEmail" placeholder="name@company.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="yourMessage">Message</label>
+                    <textarea id="yourMessage" name="yourMessage" rows="5" placeholder="Let's discuss an AI collaboration..." required></textarea>
+                </div>
+                
+                <button type="submit" class="button full-width">Send Message</button>
+            </form>
+        </section>
+
+        <div class="home-btn-container">
+            <a href="dashboard.html" class="button secondary">Back to Dashboard</a>
+        </div>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 Mahnoor.dev ┃ Secure Access</p>
+        <p>&copy; 2026 Mahnoor.dev ┃ Built with Python & Clean Code</p>
         <button class="theme-toggle-btn" onclick="changeTheme()" title="Switch Theme">🎨</button>
 
     </footer>
 
+    <script src="script.js"></script> 
 </body>
 </html>

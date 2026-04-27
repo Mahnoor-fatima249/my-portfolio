@@ -6,12 +6,12 @@
     <title>Messages | Mahnoor.dev</title>
     <link rel="stylesheet" href="new.css">
 </head>
-<body class="home-page"> 
+<body class="messages-page"> 
 
     <header class="header">
         <div class="logo">Ⓜ Mahnoor.dev</div>
-        <nav class="menu">
-            <ul>
+        <nav>
+            <ul class="menu">
                 <li><a href="dashboard.html" class="button">Dashboard</a></li>
                 <li><a href="index.html" class="button">Logout</a></li>
             </ul>
@@ -24,7 +24,7 @@
             <p>Have a technical inquiry about my <strong>AI Research</strong> or <strong>Web Projects</strong>? Drop a line below.</p>
         </section>
 
-        <section class="contact-section">
+        <section class="contact-section container-box">
             <form action="#" class="contact-form">
                 <div class="input-group">
                     <label for="yourName">Full Name</label>
@@ -41,17 +41,19 @@
                     <textarea id="yourMessage" name="yourMessage" rows="5" placeholder="Let's discuss an AI collaboration..." required></textarea>
                 </div>
                 
-                <button type="submit" class="button" style="width: 100%;">Send Message</button>
+                <button type="submit" class="button full-width">Send Message</button>
             </form>
         </section>
 
-        <div class="home-btn-container" style="margin-top: 30px;">
-            <a href="dashboard.html" class="button">Back to Dashboard</a>
+        <div class="home-btn-container">
+            <a href="dashboard.html" class="button secondary">Back to Dashboard</a>
         </div>
     </main>
 
-    <footer>
-        <p>© 2026 Mahnoor.dev ┃ Built with Python & Clean Code</p>
+    <footer class="footer">
+        <p>&copy; 2026 Mahnoor.dev ┃ Built with Python & Clean Code</p>
+        <button class="theme-toggle-btn" onclick="changeTheme()" title="Switch Theme">🎨</button>
+
     </footer>
 
     <script src="script.js"></script> 

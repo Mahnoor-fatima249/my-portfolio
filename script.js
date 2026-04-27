@@ -52,44 +52,6 @@ if(addTaskBtn) {
         }
     });
 }
-
-// ==========================================
-// 4. WEATHER AI LOGIC (weather.html)
-// ==========================================
-const searchBtn = document.getElementById('searchBtn');
-if(searchBtn) {
-    searchBtn.addEventListener('click', () => {
-        const city = document.getElementById('cityInput').value.trim();
-        const apiKey = "66e85f2abdef70c3cfd70a6f2f67ef94"; 
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
-        if(city !== "") {
-            fetch(url)
-                .then(response => response.json())
-                .then(data => {
-                    if(data.cod === 200) {
-                        document.getElementById('cityName').innerText = data.name;
-                        document.getElementById('tempDisplay').innerText = Math.round(data.main.temp) + "°C";
-                        document.getElementById('descDisplay').innerText = data.weather[0].description;
-                        
-                        const iconCode = data.weather[0].icon;
-                        const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-                        document.getElementById('weatherIcon').innerHTML = `<img src="${iconUrl}" alt="weather">`;
-                        
-                        const resultDiv = document.getElementById('weatherResult');
-                        resultDiv.style.display = "block";
-                        resultDiv.classList.remove('weather-hide');
-                    } else {
-                        alert("City not found! Please check spelling.");
-                    }
-                })
-                .catch(err => alert("Connection Error. Please check your internet."));
-        } else {
-            alert("Please enter a city name!");
-        }
-    });
-}
-
 // ==========================================
 // 5. WORKSPACE TEXT CHANGE (work.html)
 // ==========================================

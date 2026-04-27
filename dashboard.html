@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard | Mahnoor.dev</title>
     <link rel="stylesheet" href="new.css">
+    <style>
+        /* Choti si extra styling taake grid balance rahe */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .nav-card {
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        .nav-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
 </head>
-<body class="dashboard-page home-page"> <header class="header">
+<body class="dashboard-page home-page"> 
+
+    <header class="header">
         <div class="logo">Ⓜ Mahnoor.dev</div>
         <nav>
             <ul class="menu">
@@ -18,54 +36,64 @@
     <main class="container dashboard-main">
         <section class="container-box profile-preview">
             <div class="photo-wrapper">
-                <img src="me.png"
-               class="profile-photo" alt="Mahnoor's profile photo">
+                <img src="me.png" class="profile-photo" alt="Mahnoor's profile photo">
             </div>
             <h1 class="welcome-text">WELCOME BACK, MAHNOOR!</h1>
-            <p class="tagline">BSIT 6th Semester ┃ AI Intern ┃ 3.0+ CGPA</p>
+            <p class="tagline">BSIT 6th Semester ┃ AI Intern ┃ 3.0+ CGPA Progress</p>
         </section>
 
         <section class="dashboard-grid">
-            <a href="about.html" class="nav-card">
+            
+            <a href="about.html" class="container-box nav-card">
                 <span class="icon">👤</span>
                 <span class="label">My Profile</span>
             </a>
             
-            <a href="project.html" class="nav-card">
+            <a href="project.html" class="container-box nav-card">
                 <span class="icon">💻</span>
                 <span class="label">Projects Hub</span>
             </a>
             
-            <a href="ai.html" class="nav-card">
-                <span class="icon">🤖</span>
-                <span class="label">AI Research Lab</span>
+            <a href="todo.html" class="container-box nav-card">
+                <span class="icon">📝</span>
+                <span class="label">Task Manager</span>
             </a>
             
-            <a href="blog.html" class="nav-card">
-                <span class="icon">✍️</span>
-                <span class="label">Blog Posts</span>
+            <a href="weather.html" class="container-box nav-card">
+                <span class="icon">☁️</span>
+                <span class="label">Weather AI</span>
             </a>
             
-            <a href="cv.html" class="nav-card">
+            <a href="work.html" class="container-box nav-card">
+                <span class="icon">🚀</span>
+                <span class="label">AI Workspace</span>
+            </a>
+            
+            <a href="cv.html" class="container-box nav-card">
                 <span class="icon">📄</span>
                 <span class="label">My CV</span>
             </a>
             
-            <a href="contactme.html" class="nav-card">
+            <a href="blog.html" class="container-box nav-card">
+                <span class="icon">✍️</span>
+                <span class="label">Blog Posts</span>
+            </a>
+            
+            <a href="contactme.html" class="container-box nav-card">
                 <span class="icon">📩</span>
                 <span class="label">Contact Me</span>
             </a>
+
         </section>
 
-        <div class="home-btn-container">
+        <div class="home-btn-container" style="margin-top: 40px;">
             <a href="index.html" class="button secondary">Go Home</a>
         </div>
     </main>
 
     <footer class="footer container-box">
-        <p>&copy; 2026 Mahnoor.dev ┃ Learning & Growing Every Day</p>
+        <p>&copy; 2026 Mahnoor.dev ┃ Tracking Growth ┃ Innovation in Progress</p>
         <button class="theme-toggle-btn" onclick="changeTheme()" title="Switch Theme">🎨</button>
-
     </footer>
 
     <script src="script.js"></script>

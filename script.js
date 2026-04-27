@@ -66,21 +66,40 @@ if(addTaskBtn) {
 }
 
 // ==========================================
-// 4. WEATHER AI LOGIC (For weather.html)
+// ==========================================
+// 4. LIVE WEATHER AI (Working Version)
 // ==========================================
 const searchBtn = document.getElementById('searchBtn');
+
 if(searchBtn) {
     searchBtn.addEventListener('click', () => {
         const city = document.getElementById('cityInput').value;
-        const resultDiv = document.getElementById('weatherResult');
-        
+        const apiKey = "409da7fd73f1b34e0c421073d5719c5e"; // <-- Apni key yahan dalein
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
         if(city.trim() !== "") {
-            // Filhal Demo logic (Jab tak aap API Key na dalain)
-            document.getElementById('cityName').innerText = city;
-            document.getElementById('tempDisplay').innerText = "24°C";
-            document.getElementById('descDisplay').innerText = "AI Predicted: Clear Skies";
-            resultDiv.classList.remove('weather-hide');
-            resultDiv.style.display = "block";
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if(data.cod === 200) {
+                        document.getElementById('cityName').innerText = data.name;
+                        document.getElementById('tempDisplay').innerText = Math.round(data.main.temp) + "°C";
+                        document.getElementById('descDisplay').innerText = data.weather[0].description;
+                        
+                        // Icon change logic
+                        const iconCode = data.weather[0].icon;
+                        const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
+                        document.getElementById('weatherIcon').innerHTML = `<img src="${iconUrl}" alt="weather">`;
+                        
+                        document.getElementById('weatherResult').classList.remove('weather-hide');
+                        document.getElementById('weatherResult').style.display = "block";
+                    } else {
+                        alert("City not found! Please check the name.");
+                    }
+                })
+                .catch(err => alert("Error fetching data. Check your internet or API key."));
+        } else {
+            alert("Please enter a city name!");
         }
     });
 }

@@ -3,80 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile | Mahnoor.dev</title>
+    <title>Profile | Mahnoor.dev</title>
     <link rel="stylesheet" href="new.css">
 </head>
-<body class="home-page">
+<body class="profile-page">
 
     <header class="header">
         <div class="logo">Ⓜ Mahnoor.dev</div>
-        <nav class="menu">
-            <ul>
-                <li><a href="dashboard.html" class="button">Dashboard</a></li>
-                <li><a href="index.html" class="button">Logout</a></li>
-            </ul>
+        <nav class="nav-links">
+            <a href="dashboard.html" class="button">Dashboard</a>
+            <a href="index.html" class="button">Logout</a>
         </nav>
     </header>
 
     <main class="container">
         <section class="profile-preview">
-            <img src="https://media.licdn.com/dms/image/v2/D5603AQGaHGnDwEYhyQ/profile-displayphoto-crop_800_800/B56Z0rItBHIMAM-/0/1774545200157?e=1776902400&v=beta&t=tGWIxg8A1zz9smZ1g6qzr9SbTmPIkmByu48pjs6cn8I" alt="Mahnoor Fatima" class="profile-photo">
+             <div class="photo-wrapper">
+                <img src="image/me.png"
+               class="profile-photo" alt="Mahnoor's profile photo">
+            </div>
             <h2>Mahnoor Fatima</h2>
-            <p>Full Stack Web Developer | AI & Python Intern</p>
+            <p class="tagline">Web Designer | BSIT Student</p>
         </section>
 
-        <section class="container-box">
-            <form class="notification-form">
+        <section class="container-box settings-card">
+            <form action="#" class="profile-form">
                 <div class="input-group">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" value="mf0488789@gmail.com" readonly>
+                    <input type="email" id="email" placeholder="Email" required>
                 </div>
 
                 <div class="input-group">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" value="+92-312-8137272" readonly>
+                    <input type="tel" id="phone" placeholder="Phone Number" required>
                 </div>
 
                 <div class="input-group">
-                    <label for="country">Location</label>
+                    <label for="country">Select Country</label>
                     <select id="country" name="country">
                         <option value="Pakistan" selected>Pakistan</option>
                         <option value="USA">USA</option>
                         <option value="UK">UK</option>
-                        <option value="Australia">Australia</option>
                         <option value="Canada">Canada</option>
+                        <option value="Australia">Australia</option>
                         </select>
                 </div>
 
-                <div class="btn-group" style="margin-top: 20px;">
-                    <button type="button" class="button" style="width: 100%;">Save Profile</button>
+                <div class="form-actions">
+                    <button type="submit" class="button full-width">Save Changes</button>
+                    <a href="#" class="view-btn">Upload New Photo</a>
                 </div>
             </form>
         </section>
 
-        <section class="about-section" style="margin-top: 30px;">
-            <h3>Bio</h3>
+        <section class="about-section bio-card">
+            <h3>About Me</h3>
             <p>
-                Hi, I'm **Mahnoor Fatima**, a BSIT student and AI Intern at DecodeLabs[cite: 10, 32]. 
-                I specialize in building and deploying conversational AI using **Llama-3** and **Gradio**[cite: 11, 34]. 
-                My goal is to bridge the gap between clean, functional code and innovative AI solutions[cite: 12].
+                Hi, I'm <strong>Mahnoor Fatima</strong>, a passionate learner from Pakistan who dreams to become a top web developer. 
+                I love creating beautiful websites and learning new coding skills every day. 
+                My goal is to help people with technology and make the web a better place for everyone.
             </p>
             <p>
-                🌱 **Skills:** Python, LLM Integration, React, HTML5, CSS3[cite: 85, 93, 107].<br>
-                💻 **Interests:** AI Research, UX Design, and Professional Photo Editing[cite: 71, 87].
+                🌱 <strong>My Skills:</strong> HTML, CSS, Designing <br>
+                💻 <strong>Hobbies:</strong> Coding, Designing, Learning something creative every day!
             </p>
         </section>
 
-        <div class="home-btn-container" style="margin-top: 30px;">
-            <a href="#" class="view-btn">Update Profile Photo</a>
-            <a href="dashboard.html" class="button">Back to Dashboard</a>
+        <div class="home-btn-container">
+            <a href="dashboard.html" class="button secondary">Back to Dashboard</a>
         </div>
     </main>
 
-    <footer>
-        <p>© 2026 Mahnoor.dev ┃ Dedicated to Innovation</p>
+    <footer class="footer">
+        <p>&copy; 2026 Mahnoor.dev ┃ Built with Passion</p>
+        <button class="theme-toggle-btn" onclick="changeTheme()" title="Switch Theme">🎨</button>
+
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> 
 </body>
 </html>

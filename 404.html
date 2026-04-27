@@ -8,20 +8,25 @@
 </head>
 <body class="error-page">
 
-    <div class="container error-container">
-        <h1 class="error-code">404</h1>
-        <div class="error-icon">🔍</div>
-        <h2>Oops! Lost in Space?</h2>
-        <p>The page you are looking for doesn't exist or has been moved to another galaxy.</p>
-        
-        <div class="button-group error-btns">
-            <a href="index.html" class="button">Go Back Home</a>
-            <a href="contactme.html" class="button">Report Issue</a>
-        </div>
-    </div>
+    <main class="container error-container">
+        <section class="error-content">
+            <h1 class="error-code">404</h1>
+            
+            <div class="error-icon" aria-hidden="true">🔍</div>
+            
+            <h2>Oops! Lost in Space?</h2>
+            <p>The page you are looking for doesn't exist or has been moved to another galaxy.</p>
+            
+            <nav class="button-group error-btns">
+                <a href="index.html" class="button">Go Back Home</a>
+                <a href="contactme.html" class="button">Report Issue</a>
+            </nav>
+        </section>
+    </main>
 
     <footer class="error-footer">
-        <p>© 2026 Mahnoor.dev ┃ Lost but Found</p>
+        <p>&copy; 2026 Mahnoor.dev ┃ Lost but Found</p>
+        <button class="theme-toggle-btn" onclick="changeTheme()" title="Switch Theme">🎨</button>
     </footer>
 
 </body>

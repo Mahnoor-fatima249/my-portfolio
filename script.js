@@ -74,7 +74,7 @@ const searchBtn = document.getElementById('searchBtn');
 if(searchBtn) {
     searchBtn.addEventListener('click', () => {
         const city = document.getElementById('cityInput').value;
-        const apiKey = "409da7fd73f1b34e0c421073d5719c5e"; // <-- Apni key yahan dalein
+        const apiKey = "WEATHER"; // <-- Apni key yahan dalein
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
         if(city.trim() !== "") {

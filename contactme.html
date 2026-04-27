@@ -3,50 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Mahnoor Fatima</title>
+    <title>Contact Me | Mahnoor.dev</title>
     <link rel="stylesheet" href="new.css">
 </head>
-<body>
+<body class="auth-page">
+
     <header class="header">
-    <div class="logo">Ⓜ Mahnoor.dev</div>
-    <div class="nav-links">
-        <a href="dashboard.html" class="button">Dashboard</a>
-        <a href="index.html" class="button">Logout</a>
-    </div>
-</header>
-    <header class="header">
-        <h1>Get in Touch</h1>
-        <p>Hi, I'm Mahnoor Fatima. If you have any questions, ideas, or need help with a project, feel free to reach out. I'll get back to you as soon as possible!</p>
+        <div class="logo">Ⓜ Mahnoor.dev</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="index.html" class="logout-btn">Logout</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="contact-section">
-        <form action="https://formspree.io/f/your-id" method="POST" class="contact-form">
-            <label for="Name">Name:</label>
-            <input type="text" id="Name" name="name" placeholder="Enter your name" required>
-
-            <label for="Email">Email:</label>
-            <input type="email" id="Email" name="email" placeholder="Enter your email" required>
-
-            <label for="Message">Message:</label>
-            <textarea id="Message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-            
-            <button type="submit" class="button">Send Message</button>
-        </form>
-
-        <section class="link-section">
-            <h3>Find me on:</h3>
-            <a href="mailto:mahnoor.dev@gmail.com">mahnoor.dev@gmail.com</a><br> 
-            <a href="https://www.instagram.com/your-username" target="_blank">Instagram</a><br>
-            <a href="https://pk.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+    <main class="container">
+        <section class="hero-section">
+            <h1 class="welcome-text">Get in Touch</h1>
+            <p class="tagline">Let's build something innovative together! </p>
         </section>
-    </section>
 
-    <footer>
-        <p>Thanks for Visiting Mahnoor.dev!</p>
-    </footer><br>
-<div class="home-btn-container">
-    <a href="index.html" class="button">Back to Home</a>
-</div>
+        <div class="container-box auth-card contact-form-wrapper">
+            <form id="contactForm">
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" required [cite: 3]>
+                </div>
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Write your message here..."></textarea>
+                </div>
+                <button type="submit" class="button full-width">Send Message</button>
+            </form>
+        </div>
+
+        
+        <section class="container-box social-links-wrapper" >
+    <h3 class="social-heading">Find me on:</h3>
+    <div class="skill-tags">
+        <a href="mailto:mf0488789@gmail.com" class="button secondary">📧 Email Me</a>
+        <a href="https://pk.linkedin.com/in/mahnoor-fatima-529b91301" class="button secondary">🔗 LinkedIn</a>
     </div>
+</section>
+    </main>
+
+   <footer class="footer container-box">
+    <p>&copy; 2026 Mahnoor.dev ┃ Full Stack Developer & AI Intern</p>
+        <button class="theme-toggle-btn" onclick="changeTheme()" title="Switch Theme">🎨</button>
+
+</footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -6,14 +6,14 @@
     <title>My Blog | Mahnoor.dev</title>
     <link rel="stylesheet" href="new.css">
 </head>
-<body class="home-page">
+<body class="blog-page">
 
     <header class="header">
         <div class="logo">Ⓜ Mahnoor.dev</div>
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="project.html">Projects</a></li>
                 <li><a href="ai.html">AI Lab</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
             </ul>
@@ -26,48 +26,50 @@
             <p>Insights into my BSIT journey, AI internships, and web engineering.</p>
         </section>
 
-        <div class="cards">
+        <section class="cards-grid">
             
-            <article class="container-box ai-card">
+            <article class="container-box blog-card">
                 <span class="intern-badge">HEC Training</span>
-                <div class="blog-info">
-                    <span class="blog-date">April 4, 2026</span>
+                <header class="blog-header">
+                    <time datetime="2026-04-04" class="blog-date">April 4, 2026</time>
                     <h2>The GenAI Revolution</h2>
-                </div>
-                <p>Starting the **HEC Generative AI Cohort 3** has been a game-changer. Beyond just prompting, I'm learning how LLMs can be integrated into real-world applications to solve complex problems.</p>
-                <a href="#" class="view-btn">Read More</a>
+                </header>
+                <p>Starting the <strong>HEC Generative AI Cohort 3</strong> has been a game-changer. Beyond just prompting, I'm learning how LLMs can be integrated into real-world applications to solve complex problems.</p>
+                <a href="#" class="view-btn">Read More &rarr;</a>
             </article>
 
-            <article class="container-box ai-card">
+            <article class="container-box blog-card">
                 <span class="intern-badge">Web Engineering</span>
-                <div class="blog-info">
-                    <span class="blog-date">March 30, 2026</span>
+                <header class="blog-header">
+                    <time datetime="2026-03-30" class="blog-date">March 30, 2026</time>
                     <h2>Code Cleanliness & GitHub</h2>
-                </div>
-                <p>Keeping HTML, CSS, and JS separate isn't just about 'neatness'—it's about scalability. As I progress through my **6th semester**, I've realized that clean repositories attract better opportunities.</p>
-                <a href="#" class="view-btn">Read More</a>
+                </header>
+                <p>Keeping HTML, CSS, and JS separate isn't just about 'neatness'—it's about scalability. As I progress through my <strong>6th semester</strong>, I've realized that clean repositories attract better opportunities.</p>
+                <a href="#" class="view-btn">Read More &rarr;</a>
             </article>
 
-            <article class="container-box ai-card">
+            <article class="container-box blog-card">
                 <span class="intern-badge">DecodeLab</span>
-                <div class="blog-info">
-                    <span class="blog-date">March 15, 2026</span>
+                <header class="blog-header">
+                    <time datetime="2026-03-15" class="blog-date">March 15, 2026</time>
                     <h2>Life as an AI Intern</h2>
-                </div>
-                <p>My time at **DecodeLab** has taught me more than any textbook could. Implementing OCR and pattern matching models showed me the true power of Python in the industry.</p>
-                <a href="#" class="view-btn">Read More</a>
+                </header>
+                <p>My time at <strong>DecodeLab</strong> has taught me more than any textbook could. Implementing OCR and pattern matching models showed me the true power of Python in the industry.</p>
+                <a href="#" class="view-btn">Read More &rarr;</a>
             </article>
 
-        </div>
+        </section>
 
-        <div class="home-btn-container">
+        <nav class="home-btn-container" aria-label="Page navigation">
             <a href="dashboard.html" class="button">Back to Dashboard</a>
             <a href="index.html" class="button">Home</a>
-        </div>
+        </nav>
     </main>
 
-    <footer>
-        <p>© 2026 Mahnoor Fatima ┃ Building the Future with AI ┃ 3.0+ CGPA</p>
+    <footer class="footer">
+        <p>&copy; 2026 Mahnoor Fatima ┃ Building the Future with AI</p>
+        <button class="theme-toggle-btn" onclick="changeTheme()" title="Switch Theme">🎨</button>
+
     </footer>
 
     <script src="script.js"></script>

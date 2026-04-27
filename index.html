@@ -6,7 +6,7 @@
     <title>Mahnoor Fatima | AI & Web Developer</title>
     <link rel="stylesheet" href="new.css">
 </head>
-<body class="home-page" id="page">
+<body class="home-page">
 
     <header class="header">
         <div class="logo">Ⓜ Mahnoor.dev</div>
@@ -14,7 +14,7 @@
             <ul class="menu">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="project.html">Projects</a></li>
                 <li><a href="cv.html">CV</a></li>
                 <li><a href="ai.html">AI Lab</a></li>
                 <li><a href="blog.html">Blog</a></li>
@@ -26,38 +26,48 @@
     <main class="container">
         <section class="hero">
             <h1 class="welcome-text">Building the Future with Code & AI</h1>
-            <p>Hi, I'm <strong>Mahnoor Fatima</strong>. A Full Stack Web Developer and AI Intern dedicated to innovative solutions[cite: 2, 10].</p>
+            <p class="hero-subtext">Hi, I'm <strong>Mahnoor Fatima</strong>. A Full Stack Web Developer and AI Intern dedicated to innovative solutions.</p>
             
             <div class="interactive-container">
-                <h3 id="heading">Explore My Portfolio</h3>
+                <h3>Explore My Portfolio</h3>
                 <div class="button-group">
-                    <button class="button js-btn" onclick="changeText()">Say Hello</button>
-                    <button class="button js-btn color-btn" onclick="changeColor()">Change Theme</button>
+                    
                 </div>
             </div>
         </section>
 
-        <section class="container-box">
-            <img src="https://media.licdn.com/dms/image/v2/D5603AQGaHGnDwEYhyQ/profile-displayphoto-crop_800_800/B56Z0rItBHIMAM-/0/1774545200157?e=1776902400&v=beta&t=tGWIxg8A1zz9smZ1g6qzr9SbTmPIkmByu48pjs6cn8I" alt="Mahnoor Fatima" class="profile-photo">
-            
-            <div class="mission-text">
+        <section class="container-box mission-section">
+            <div class="mission-content">
+               <div class="photo-wrapper">
+                <img src="image/me.png"
+               class="profile-photo" alt="Mahnoor's profile photo">
+            </div>
                 <h2>🔎 My Mission</h2>
-                <p>Currently a BSIT 6th Semester student at Virtual University[cite: 82]. My mission is to bridge the gap between clean code and <strong>Generative AI</strong> through projects like LLM integration and interactive web tools[cite: 12, 108].</p>
-                <div class="btn-group">
+                <p>
+  Currently a <strong>BSIT 6th Semester</strong> student at Virtual University. 
+  My mission is to bridge the gap between <strong>Clean Code</strong> and 
+  <strong>Generative AI</strong> through advanced LLM integration and 
+  interactive web tools.
+</p><br>
+                
+                <div class="button-group">
                     <a href="about.html" class="button">Read My Story</a>
-                    <a href="projects.html" class="button" style="background: #00ffff; color: #1a1f71;">View Projects</a>
+                    <a href="project.html" class="button highlight-btn">View Projects</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 Mahnoor.dev ┃ Focused on Excellence ┃ 3.0+ CGPA Progress </p>
-        <div class="footer-links">
-            <a href="login.html">Admin Login</a> | <a href="signup.html">Join Me</a>
-        </div>
-    </footer>
-
+  
+           <footer class="footer container-box">
+    <p>&copy; 2026 Mahnoor.dev ┃ Focused on Excellence ┃ 3.0+ CGPA Progress</p>
+    
+    <div class="footer-auth-buttons">
+        <a href="login.html" class="btn-link small">Admin Login</a>
+        <a href="signup.html" class="btn-link small">Join Me</a>
+    </div><br>
+      <button class="theme-toggle-btn" onclick="changeTheme()" title="Switch Theme">🎨
+</footer>
     <script src="script.js"></script>
 </body>
 </html>

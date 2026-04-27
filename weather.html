@@ -13,8 +13,7 @@
         <nav class="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="project.html">Projects</a></li> <li><a href="dashboard.html">Dashboard</a></li>
             </ul>
         </nav>
     </header>
@@ -27,13 +26,11 @@
 
         <section class="container-box">
             <div class="input-group" style="display: flex; gap: 10px; margin-bottom: 20px;">
-               <input type="text" id="cityInput" placeholder="Enter City Name...">
-              <button class="button" id="searchBtn">Search</button>
-
-        <script src="script.js"></script>
+                <input type="text" id="cityInput" placeholder="Enter City Name...">
+                <button class="button" id="searchBtn">Search</button>
             </div>
 
-            <div id="weatherResult" class="achievement-item weather-hide" style="text-align: center; padding: 20px;">
+            <div id="weatherResult" class="achievement-item weather-hide" style="text-align: center; padding: 20px; display:none;">
                 <h2 id="cityName" style="color: #00ffff; margin-bottom: 10px;">City Name</h2>
                 <div id="weatherIcon" style="font-size: 3rem; margin: 10px 0;">🌤️</div>
                 <p id="tempDisplay" style="font-size: 1.5rem; font-weight: bold;">--°C</p>
@@ -42,7 +39,7 @@
         </section>
 
         <div class="home-btn-container" style="margin-top: 30px;">
-            <a href="projects.html" class="button">View More Projects</a>
+            <a href="project.html" class="button">View More Projects</a>
             <a href="dashboard.html" class="button">Back to Dashboard</a>
         </div>
     </main>

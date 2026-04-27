@@ -1,27 +1,40 @@
 # 🚀 Mahnoor Fatima | AI & Web Developer Portfolio
 
-Welcome to my official GitHub repository! I am a passionate **BSIT (6th Semester)** student at Virtual University of Pakistan, dedicated to building intelligent solutions that bridge the gap between human logic and Artificial Intelligence.
+<p align="center">
+  <img src="https://img.shields.io/badge/BSIT-6th%20Semester-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/GPA-3.0%2B-brightgreen?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+</p>
+
+Welcome to my official portfolio! I am a passionate **BSIT student** at the Virtual University of Pakistan, currently focused on building intelligent solutions that bridge the gap between **Clean Code** and **Artificial Intelligence**.
 
 ## 🌟 About Me
-- 🎓 **Education:** BSIT 6th Semester (Virtual University)
+- 🎓 **Education:** BSIT 6th Semester (VU Pakistan)
 - 📈 **Performance:** Maintaining a solid **3.0+ CGPA**
-- 💼 **Current Roles:** - AI Intern at **DecodeLab**
-  - Generative AI Intern at **Arch Technologies**
-- 🎯 **Mission:** Integrating **Clean Code** with **Generative AI** and **LLMs**.
+- 💼 **Current Roles:** - **AI Intern** at **DecodeLab** (Focus: Computer Vision & ML)
+  - **Generative AI Intern** at **Arch Technologies**
+- 🎯 **Mission:** Bridging the gap between Web Development and Generative AI (LLMs).
 
 ## 🛠️ Technical Stack
-- **Languages:** Python, JavaScript, HTML5, CSS3
 - **AI/ML:** Llama-3, Tesseract OCR, NLP, Prompt Engineering
-- **Web:** Full-Stack Web Development, Responsive UI/UX
+- **Web:** Full-Stack (HTML, CSS, JavaScript), Responsive UI/UX
+- **Tools:** Python, Streamlit, Hugging Face, GitHub Actions
 
-## 📂 Key Projects
-- **AI Optical Recognition:** OCR pipeline using Tesseract & MobileNet-SSD.
-- **Language Translator:** NLP-based multi-language communication tool.
-- **AI Roadmap Dashboard:** A strategic guide for transitioning into AI Specialization.
+## 📂 Featured Projects (Live & Python)
+
+### 🧠 AI & Machine Learning (Hugging Face)
+- **[Modern Weather AI](https://huggingface.co/spaces/bc230425989/weather-app):** Python-powered real-time environmental tracking.
+- **[Mahnoor AI (Vision)](https://huggingface.co/spaces/bc230425989/Mahnoor-AI):** Object recognition and Computer Vision implementation.
+- **[Language Translator](https://huggingface.co/spaces/bc230425989/Language-translator):** NLP-based multi-language communication tool.
+
+### 💼 Professional Internships (GitHub)
+- **[DecodeLab AI Archive](https://github.com/Mahnoor-fatima249/DecodeLabs-Internship):** 4 major Python projects including OCR pipelines and MobileNet-SSD detection.
+- **[Pro Task Manager](https://github.com/Mahnoor-fatima249/Pro-Task-Manager):** A clean, professional JS-based task management system.
 
 ## 📬 Connect with Me
-- **LinkedIn:** [Your LinkedIn Link Here]
-- **Portfolio:** [Your GitHub Pages Link Here]
+- **Portfolio:** [Visit My Live Site](https://mahnoor-fatima249.github.io/My-Web-Portal/) 🌐
+- **LinkedIn:** [Connect with me on LinkedIn](https://www.linkedin.com/in/mahnoor-fatima-ai-dev) 💼
 
 ---
 *“Building the future, one line of code at a time.”* Ⓜ️

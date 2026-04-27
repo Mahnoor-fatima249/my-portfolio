@@ -118,3 +118,21 @@ function changeText() {
         }, 300);
     }
 }
+const searchBtn = document.getElementById('searchBtn');
+
+if (searchBtn) {
+    searchBtn.addEventListener('click', function() {
+        console.log("Button Clicked!"); // Browser console check karein
+        alert("Search button kaam kar raha hai!"); 
+        
+        const city = document.getElementById('cityInput').value;
+        if (city === "") {
+            alert("Pehle sheher ka naam likhein!");
+            return;
+        }
+        
+        // Yahan aapka baqi fetch wala code aayega...
+    });
+} else {
+    console.log("Error: Search button nahi mila!");
+}

@@ -67,14 +67,15 @@ if(addTaskBtn) {
 
 // ==========================================
 // ==========================================
-// 4. LIVE WEATHER AI (Working Version)
+// ==========================================
+// WEATHER AI LOGIC
 // ==========================================
 const searchBtn = document.getElementById('searchBtn');
 
 if(searchBtn) {
     searchBtn.addEventListener('click', () => {
         const city = document.getElementById('cityInput').value;
-        const apiKey = "WEATHER"; // <-- Apni key yahan dalein
+        const apiKey = "weather"; // <--- Put your key here
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
         if(city.trim() !== "") {
@@ -86,24 +87,23 @@ if(searchBtn) {
                         document.getElementById('tempDisplay').innerText = Math.round(data.main.temp) + "°C";
                         document.getElementById('descDisplay').innerText = data.weather[0].description;
                         
-                        // Icon change logic
                         const iconCode = data.weather[0].icon;
                         const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
                         document.getElementById('weatherIcon').innerHTML = `<img src="${iconUrl}" alt="weather">`;
                         
-                        document.getElementById('weatherResult').classList.remove('weather-hide');
-                        document.getElementById('weatherResult').style.display = "block";
+                        const resultDiv = document.getElementById('weatherResult');
+                        resultDiv.style.display = "block";
+                        resultDiv.classList.remove('weather-hide');
                     } else {
-                        alert("City not found! Please check the name.");
+                        alert("City not found!");
                     }
                 })
-                .catch(err => alert("Error fetching data. Check your internet or API key."));
+                .catch(err => alert("Connection Error. Check API Key."));
         } else {
             alert("Please enter a city name!");
         }
     });
 }
-
 // ==========================================
 // 5. WORKSPACE TEXT CHANGE (For work.html)
 // ==========================================

@@ -3,36 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard ┃ Mahnoor.dev</title>
+    <title>Dashboard | Mahnoor.dev</title>
     <link rel="stylesheet" href="new.css">
 </head>
-<body class="home-page">
-
-    <header class="header">
+<body class="dashboard-page home-page"> <header class="header">
         <div class="logo">Ⓜ Mahnoor.dev</div>
-        <a href="index.html" class="button">Logout</a>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html" class="logout-btn">Logout</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container">
-        <section class="profile-preview">
-            <img src="https://media.licdn.com/dms/image/v2/D5603AQGaHGnDwEYhyQ/profile-displayphoto-crop_800_800/B56Z0rItBHIMAM-/0/1774545200157?e=1776902400&v=beta&t=tGWIxg8A1zz9smZ1g6qzr9SbTmPIkmByu48pjs6cn8I" alt="Mahnoor Fatima" class="profile-photo">
-            <h2 class="welcome-text">Welcome back, Mahnoor!</h2>
-            <p>Your AI Journey & Web Development Control Panel</p>
+    <main class="container dashboard-main">
+        <section class="container-box profile-preview">
+            <div class="photo-wrapper">
+                <img src="image/me.png"
+               class="profile-photo" alt="Mahnoor's profile photo">
+            </div>
+            <h1 class="welcome-text">WELCOME BACK, MAHNOOR!</h1>
+            <p class="tagline">BSIT 6th Semester ┃ AI Intern ┃ 3.0+ CGPA</p>
         </section>
 
-        <div class="cards">
-            <a href="about.html" class="button">My Profile</a>
-            <a href="projects.html" class="button">Projects Hub</a>
-            <a href="ai.html" class="button">AI Research Lab</a>
-            <a href="blog.html" class="button">Blog Posts</a>
-            <a href="cv.html" class="button">My CV</a>
-            <a href="contactme.html" class="button">Contact Me</a>
-            <a href="index.html" class="button">Go Home</a>
+        <section class="dashboard-grid">
+            <a href="about.html" class="nav-card">
+                <span class="icon">👤</span>
+                <span class="label">My Profile</span>
+            </a>
+            
+            <a href="project.html" class="nav-card">
+                <span class="icon">💻</span>
+                <span class="label">Projects Hub</span>
+            </a>
+            
+            <a href="ai.html" class="nav-card">
+                <span class="icon">🤖</span>
+                <span class="label">AI Research Lab</span>
+            </a>
+            
+            <a href="blog.html" class="nav-card">
+                <span class="icon">✍️</span>
+                <span class="label">Blog Posts</span>
+            </a>
+            
+            <a href="cv.html" class="nav-card">
+                <span class="icon">📄</span>
+                <span class="label">My CV</span>
+            </a>
+            
+            <a href="contactme.html" class="nav-card">
+                <span class="icon">📩</span>
+                <span class="label">Contact Me</span>
+            </a>
+        </section>
+
+        <div class="home-btn-container">
+            <a href="index.html" class="button secondary">Go Home</a>
         </div>
     </main>
 
-    <footer>
-        <p>© 2026 Mahnoor.dev ┃ Managing Innovation</p>
+    <footer class="footer container-box">
+        <p>&copy; 2026 Mahnoor.dev ┃ Learning & Growing Every Day</p>
+        <button class="theme-toggle-btn" onclick="changeTheme()" title="Switch Theme">🎨</button>
+
     </footer>
 
     <script src="script.js"></script>
